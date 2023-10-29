@@ -108,16 +108,17 @@ FOREIGN KEY (department_id) REFERENCES departments(department_id);
 
 -- Populate employees table
 INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
-VALUES (1, 'John', 'Doe', 'johndoe@example.com', '555-1234', '2021-10-30', 'IT_PROG', 5000, 0.1, NULL, 1),
-       (2, 'Jane', 'Doe', 'janedoe@example.com', '555-5678', '2021-10-30', 'SA_MAN', 10000, 0.2, 1, 2),
+VALUES (1, 'John', 'Aerith', 'johndoe@example.com', '555-1234', '2001-10-20', 'IT_PROG', 5000, 0.1, NULL, 1),
+       (2, 'Jane', 'Zaray', 'janedoe@example.com', '555-5678', '2001-03-30', 'SA_MAN', 10000, 0.2, 1, 2),
        (3, 'Bob', 'Smith', 'bobsmith@example.com', '555-9012', '2021-10-30', 'SA_REP', 8000, 0.15, 2, 2),
        (4, 'Alice', 'Johnson', 'alicejohnson@example.com', '555-3456', '2021-10-30', 'HR_REP', 6000, 0.1, 3, 3),
-       (5, 'David', 'Lee', 'davidlee@example.com', '555-7890', '2021-10-30', 'IT_PROG', 5500, 0.05, 1, 1),
-       (6, 'Sarah', 'Kim', 'sarahkim@example.com', '555-2345', '2021-10-30', 'ST_CLERK', 3000, NULL, 2, 4),
+       (5, 'David', 'Lee', 'davidlee@example.com', '555-7890', '2015-10-30', 'IT_PROG', 5500, 0.05, 1, 1),
+       (6, 'Sarah', 'Kim', 'sarahkim@example.com', '555-2345', '2008-10-30', 'ST_CLERK', 3000, NULL, 2, 4),
        (7, 'Michael', 'Brown', 'michaelbrown@example.com', '555-6789', '2021-10-30', 'SA_REP', 9000, 0.2, 2, 2),
        (8, 'Karen', 'Davis', 'karendavis@example.com', '555-0123', '2021-10-30', 'ST_CLERK', 3500, NULL, 6, 4),
-       (9, 'Steven', 'Wright', 'stevenwright@example.com', '555-4567', '2021-10-30', 'IT_PROG', 6000, 0.05, 1, 1),
-       (10, 'Emily', 'Taylor', 'emilytaylor@example.com', '555-8901', '2021-10-30', 'SA_REP', 7500, 0.1, 2, 2);
+       (9, 'Emanuel', 'Wright', 'emanuelwright@example.com', '555-4567', '2021-10-30', 'IT_PROG', 6000, 0.05, 1, 1),
+       (10, 'Emily', 'Taylor', 'emilytaylor@example.com', '555-8901', '1985-10-20', 'SA_REP', 7500, 0.1, 2, 2);
+
 
 
 

@@ -1,3 +1,5 @@
+USE enterprise;
+
 /*
  1 --------
  Mostrar los trabajos con la diferencia entre el salario mínimo y el máximo,
@@ -34,6 +36,8 @@ SELECT
 FROM
     jobs;
 
+
+
 -- Forma completa 1:
 SELECT
     *
@@ -47,6 +51,17 @@ FROM
     ) as sub
 WHERE
     jobs.max_salary = sub.salary;
+
+
+-- Forma completa 2, usando variables de usuario (usando el primer y segundo ejemplo juntos).
+
+-- Guardamos la variable una variable en MySQL.
+SELECT @maxSalary := MAX(max_salary) FROM jobs;
+-- La usamos en la siguiente sentencia:
+SELECT * FROM jobs WHERE max_salary = @maxSalary;
+
+
+
 
 -- Forma completa 2:
 SELECT
@@ -63,16 +78,3 @@ WHERE
 
 -- --------------------------------------------------------------------------
 -- --------------------------------------------------------------------------
-/*
- 4.4. Generar una lista por orden alfabético (apellido y nombre), ordenarlos de acuerdo a su
- antigüedad
- 
- */
--- Primero ordenamos por orden alfabetico la tabla employees;
-SELECT
-    *
-FROM
-    employees
-ORDER BY
-    first_name,
-    last_name as
