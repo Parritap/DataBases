@@ -1,0 +1,57 @@
+Generate all the mysql clauses to create the following dabase:
+
+Entities: jobs_history, departments, employees,  locations, regions, countries, jobs.
+
+job_history entity attributes:  
+    employee_id: number,  
+    start_date : date,
+    end_date : date,
+    job_id : varchar,
+    department_id : number
+
+employees entity attributes:
+    employees_id : number,
+    first_name : varchar,
+    last_name : varchar,
+    email : varchar,
+    phone_number : varchar,
+    hire_date : date,
+    job_id : varchar,
+    salary : number,
+    commission_pct : number,
+    manager_id : number,
+    department_id : number
+
+departments entity attributes:
+    department_id : number,
+    department_name : varchar,
+    manager_id : number,
+    location_id : number
+
+locations entity attributes:
+    location_id : number,
+    street_address : varchar,
+    postal_code : varchar,
+    city : varchar,
+    state_province : varchar,
+    country_id : varchar
+
+regions entity attributes:
+    region_id : number,
+    region_name : varchar
+
+countries entity attributes:
+    country_id : varchar,
+    country_name : varchar,
+    region_id : number
+
+jobs entity attributes:
+    job_id : varchar,
+    job_title : varchar,
+    min_salary : number,
+    max_salary : number
+
+
+
+
+
