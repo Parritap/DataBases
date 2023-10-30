@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     max_salary INT
 );
 
---FOREIGN KEYS ---------------------------------------------------------------
+-- FOREIGN KEYS ---------------------------------------------------------------
 /*
 ALTER TABLE employees
 ADD CONSTRAINT fk_employees_job_id
@@ -109,11 +109,11 @@ FOREIGN KEY (department_id) REFERENCES departments(department_id);
 -- Populate employees table
 INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (1, 'John', 'Aerith', 'johndoe@example.com', '555-1234', '2001-10-20', 'IT_PROG', 5000, 0.1, NULL, 1),
-       (2, 'Jane', 'Zaray', 'janedoe@example.com', '555-5678', '2001-03-30', 'SA_MAN', 10000, 0.2, 1, 2),
+       (2, 'Jane Owen', 'Zaray', 'janeowen@example.com', '555-5678', '2001-03-30', 'SA_MAN', 10000, 0.2, 1, 2),
        (3, 'Bob', 'Smith', 'bobsmith@example.com', '555-9012', '2021-10-30', 'SA_REP', 8000, 0.15, 2, 2),
-       (4, 'Alice', 'Johnson', 'alicejohnson@example.com', '555-3456', '2021-10-30', 'HR_REP', 6000, 0.1, 3, 3),
+       (4, 'Alice Ackerman', 'Johnson', 'aliceackerman@example.com', '555-3456', '2021-10-30', 'HR_REP', 6000, 0.1, 3, 3),
        (5, 'David', 'Lee', 'davidlee@example.com', '555-7890', '2015-10-30', 'IT_PROG', 5500, 0.05, 1, 1),
-       (6, 'Sarah', 'Kim', 'sarahkim@example.com', '555-2345', '2008-10-30', 'ST_CLERK', 3000, NULL, 2, 4),
+       (6, 'Sarai Trust', 'Kim', 'saraitrust@example.com', '555-2345', '2008-10-30', 'ST_CLERK', 3000, NULL, 2, 4),
        (7, 'Michael', 'Brown', 'michaelbrown@example.com', '555-6789', '2021-10-30', 'SA_REP', 9000, 0.2, 2, 2),
        (8, 'Karen', 'Davis', 'karendavis@example.com', '555-0123', '2021-10-30', 'ST_CLERK', 3500, NULL, 6, 4),
        (9, 'Emanuel', 'Wright', 'emanuelwright@example.com', '555-4567', '2021-10-30', 'IT_PROG', 6000, 0.05, 1, 1),
@@ -134,7 +134,15 @@ INSERT INTO locations (location_id, street_address, postal_code, city, state_pro
 VALUES (1, '123 Main St', '12345', 'New York', 'NY', 'US'),
        (2, '456 Main St', '67890', 'Los Angeles', 'CA', 'US'),
        (3, '789 Main St', '13579', 'Chicago', 'IL', 'US'),
-       (4, '321 Main St', '24680', 'Houston', 'TX', 'US');
+       (4, '321 Main St', '24680', 'Houston', 'TX', 'US'),
+       (5, '10 27 Canto Murano', '12345', 'Queretaro', 'NULL', 'MX'),
+       (6, '123 Elm St', '54321', 'San Francisco', NULL, 'US'),
+       (7, '789 Oak St', '98765', 'Miami', NULL, 'US'),
+       (8, '246 Elm St', '13579', 'Toronto', NULL, 'CA'),
+       (9, '567 Elm St', '86420', 'Vancouver', NULL, 'CA'),
+       (10, '135 Oak St', '35791', 'Cancun', NULL, 'MX');
+
+
 
 -- Populate regions table
 
