@@ -24,8 +24,7 @@ ALTER TABLE aula ADD CONSTRAINT aula_pk PRIMARY KEY ( id_aula );
 
 CREATE TABLE biblioteca (
     id_biblioteca     VARCHAR(10) NOT NULL,
-    nombre_biblioteca VARCHAR(50),
-    libro_id          VARCHAR(10) NOT NULL
+    nombre_biblioteca VARCHAR(50)
 )
 LOGGING;
 
@@ -84,7 +83,7 @@ LOGGING;
 CREATE TABLE libro (
     id_libro     VARCHAR(10) NOT NULL,
     nombre_libro VARCHAR(50),
-    genero_libro VARCHAR(20),
+    genero_libro VARCHAR(40),
     autor_libro  VARCHAR(50),
     num_paginas  INTEGER
 )
@@ -96,6 +95,7 @@ CREATE TABLE prestamo (
     prestamo_id      NUMBER NOT NULL,
     estudiante_id    VARCHAR(10) NOT NULL,
     biblioteca_id    VARCHAR(10) NOT NULL,
+    libro_id         VARCHAR2(10),
     fecha_prestamo   DATE,
     fecha_devolucion DATE
 )
@@ -158,6 +158,11 @@ ALTER TABLE inscripcion
 ALTER TABLE prestamo
     ADD CONSTRAINT prestamo_biblioteca_fk FOREIGN KEY ( biblioteca_id )
         REFERENCES biblioteca ( id_biblioteca )
+    NOT DEFERRABLE;
+
+ALTER TABLE prestamo
+    ADD CONSTRAINT prestamo_libro_fk FOREIGN KEY ( libro_id )
+        REFERENCES libro (id_libro)
     NOT DEFERRABLE;
 
 ALTER TABLE prestamo
@@ -635,31 +640,28 @@ SELECT 1 FROM dual;
 
 
 INSERT ALL
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (1, 'EST001', 'BIB001', TO_DATE('2024-02-24', 'YYYY-MM-DD'), TO_DATE('2024-03-10', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (2, 'EST002', 'BIB002', TO_DATE('2024-02-25', 'YYYY-MM-DD'), TO_DATE('2024-03-12', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (3, 'EST003', 'BIB003', TO_DATE('2024-02-26', 'YYYY-MM-DD'), TO_DATE('2024-03-15', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (4, 'EST004', 'BIB004', TO_DATE('2024-02-27', 'YYYY-MM-DD'), TO_DATE('2024-03-18', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (5, 'EST005', 'BIB001', TO_DATE('2024-02-28', 'YYYY-MM-DD'), TO_DATE('2024-03-20', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (6, 'EST006', 'BIB002', TO_DATE('2024-02-29', 'YYYY-MM-DD'), TO_DATE('2024-03-22', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (7, 'EST007', 'BIB003', TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('2024-03-25', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (8, 'EST008', 'BIB004', TO_DATE('2024-03-02', 'YYYY-MM-DD'), TO_DATE('2024-03-28', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (9, 'EST009', 'BIB001', TO_DATE('2024-03-03', 'YYYY-MM-DD'), TO_DATE('2024-03-30', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (10, 'EST010', 'BIB002', TO_DATE('2024-03-04', 'YYYY-MM-DD'), TO_DATE('2024-04-02', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (11, 'EST011', 'BIB003', TO_DATE('2024-03-05', 'YYYY-MM-DD'), TO_DATE('2024-04-05', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (12, 'EST012', 'BIB004', TO_DATE('2024-03-06', 'YYYY-MM-DD'), TO_DATE('2024-04-08', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (13, 'EST013', 'BIB001', TO_DATE('2024-03-07', 'YYYY-MM-DD'), TO_DATE('2024-04-10', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (14, 'EST014', 'BIB002', TO_DATE('2024-03-08', 'YYYY-MM-DD'), TO_DATE('2024-04-12', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (15, 'EST015', 'BIB003', TO_DATE('2024-03-09', 'YYYY-MM-DD'), TO_DATE('2024-04-15', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (16, 'EST016', 'BIB004', TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2024-04-18', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (17, 'EST017', 'BIB001', TO_DATE('2024-03-11', 'YYYY-MM-DD'), TO_DATE('2024-04-20', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (18, 'EST018', 'BIB002', TO_DATE('2024-03-12', 'YYYY-MM-DD'), TO_DATE('2024-04-22', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (19, 'EST019', 'BIB003', TO_DATE('2024-03-13', 'YYYY-MM-DD'), TO_DATE('2024-04-25', 'YYYY-MM-DD'))
-    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion) VALUES (20, 'EST020', 'BIB004', TO_DATE('2024-03-14', 'YYYY-MM-DD'), TO_DATE('2024-04-28', 'YYYY-MM-DD'))
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (1, 'EST001', 'BIB001', TO_DATE('2024-02-24', 'YYYY-MM-DD'), TO_DATE('2024-03-10', 'YYYY-MM-DD'), 'LIB040')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (2, 'EST002', 'BIB002', TO_DATE('2024-02-25', 'YYYY-MM-DD'), TO_DATE('2024-03-12', 'YYYY-MM-DD'), 'LIB019')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (3, 'EST003', 'BIB003', TO_DATE('2024-02-26', 'YYYY-MM-DD'), TO_DATE('2024-03-15', 'YYYY-MM-DD'), 'LIB020')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (4, 'EST004', 'BIB004', TO_DATE('2024-02-27', 'YYYY-MM-DD'), TO_DATE('2024-03-18', 'YYYY-MM-DD'), 'LIB027')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (5, 'EST005', 'BIB001', TO_DATE('2024-02-28', 'YYYY-MM-DD'), TO_DATE('2024-03-20', 'YYYY-MM-DD'), 'LIB029')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (6, 'EST006', 'BIB002', TO_DATE('2024-02-29', 'YYYY-MM-DD'), TO_DATE('2024-03-22', 'YYYY-MM-DD'), 'LIB019')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (7, 'EST007', 'BIB003', TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('2024-03-25', 'YYYY-MM-DD'), 'LIB017')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (8, 'EST008', 'BIB004', TO_DATE('2024-03-02', 'YYYY-MM-DD'), TO_DATE('2024-03-28', 'YYYY-MM-DD'), 'LIB034')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (9, 'EST009', 'BIB001', TO_DATE('2024-03-03', 'YYYY-MM-DD'), TO_DATE('2024-03-30', 'YYYY-MM-DD'), 'LIB027')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (10, 'EST010', 'BIB002', TO_DATE('2024-03-04', 'YYYY-MM-DD'), TO_DATE('2024-04-02', 'YYYY-MM-DD'), 'LIB039')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (11, 'EST011', 'BIB003', TO_DATE('2024-03-05', 'YYYY-MM-DD'), TO_DATE('2024-04-05', 'YYYY-MM-DD'), 'LIB034')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (12, 'EST012', 'BIB004', TO_DATE('2024-03-06', 'YYYY-MM-DD'), TO_DATE('2024-04-08', 'YYYY-MM-DD'), 'LIB029')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (13, 'EST013', 'BIB001', TO_DATE('2024-03-07', 'YYYY-MM-DD'), TO_DATE('2024-04-10', 'YYYY-MM-DD'), 'LIB022')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (14, 'EST014', 'BIB002', TO_DATE('2024-03-08', 'YYYY-MM-DD'), TO_DATE('2024-04-12', 'YYYY-MM-DD'), 'LIB021')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (15, 'EST015', 'BIB003', TO_DATE('2024-03-09', 'YYYY-MM-DD'), TO_DATE('2024-04-15', 'YYYY-MM-DD'), 'LIB040')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (16, 'EST016', 'BIB004', TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_DATE('2024-04-18', 'YYYY-MM-DD'), 'LIB040')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (17, 'EST017', 'BIB001', TO_DATE('2024-03-11', 'YYYY-MM-DD'), TO_DATE('2024-04-20', 'YYYY-MM-DD'), 'LIB030')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (18, 'EST018', 'BIB002', TO_DATE('2024-03-12', 'YYYY-MM-DD'), TO_DATE('2024-04-22', 'YYYY-MM-DD'), 'LIB029')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (19, 'EST019', 'BIB003', TO_DATE('2024-03-13', 'YYYY-MM-DD'), TO_DATE('2024-04-25', 'YYYY-MM-DD'), 'LIB014')
+    INTO prestamo (prestamo_id, estudiante_id, biblioteca_id, fecha_prestamo, fecha_devolucion, libro_id) VALUES (20, 'EST020', 'BIB004', TO_DATE('2024-03-14', 'YYYY-MM-DD'), TO_DATE('2024-04-28', 'YYYY-MM-DD'), 'LIB035')
 SELECT 1 FROM dual;
 
-
-
-
-
+SELECT * FROM PRESTAMO;
 
 
