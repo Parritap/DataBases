@@ -12,3 +12,12 @@ FROM
 WHERE
     MONTH (jh.start_date) = 8
     AND YEAR (jh.start_date) = 2016;
+
+
+
+@/opt/oracle/demo_databases/human_resources/hr_cre.sql
+@/opt/oracle/demo_databases/human_resources/hr_popul.sql
+@/opt/oracle/demo_databases/human_resources/hr_idx.sql
+@/opt/oracle/demo_databases/human_resources/hr_code.sql
+@/opt/oracle/demo_databases/human_resources/hr_comnt.sql
+@/opt/oracle/demo_databases/human_resources/hr_analz.sql
