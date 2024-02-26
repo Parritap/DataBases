@@ -3,7 +3,7 @@ select count(NOMBRE_DEPARTAMENTO)
 from INSCRIPCION i
          INNER JOIN CURSO c on c.ID_CURSO = i.CURSO_ID
          INNER JOIN DEPARTAMENTO d on d.ID_DEPARTAMENTO = c.DEPARTAMENTO_ID
-GROUP BY (NOMBRE_DEPARTAMENTO)
+GROUP BY (NOMBRE_DEPARTAMENTO);
 
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ from (select p.ESTUDIANTE_ID       as estudiante,
         'Literatura',
         'Historia',
         'Física')
-    )
+    );
 
 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ select a.ID_AULA,
        extract(year from e.FECHA_EVENTO)  as anio_evento,
        extract(month from e.FECHA_EVENTO) as mes_evento
 from EVENTO e
-         JOIN AULA a ON e.AULA_ID = a.ID_AULA
+         JOIN AULA a ON e.AULA_ID = a.ID_AULA;
 
 
 select aula,
@@ -94,6 +94,45 @@ group by grouping sets (
     ()
     );
 
+------------------------------------------------------------------------------------------------------------------------------>
+
+
+-- ROLLUP
+-- Listar la cantidad de aulas en las que se dictan clase por curso, así mismo por la catidad de aulas por departamento,
+-- como tambien la cantidad total de aulas en la universidad.
+
+-- ROLLUP
+-- Listar la cantidad de aulas en las que se dictan clase por curso, así mismo por la cantidad de aulas por departamento,
+-- como tambien la cantidad total de aulas en la universidad.
+
+
+create or replace view aula_curso_dpto (departamento, curso, id_aula) as
+select d.NOMBRE_DEPARTAMENTO as departamento,
+       c.NOMBRE_CURSO,
+       a.ID_AULA
+from AULA a
+         join CURSO c on a.ID_AULA = c.AULA_ID
+         JOIN DEPARTAMENTO d on c.DEPARTAMENTO_ID = d.ID_DEPARTAMENTO;
+
+
+select departamento, curso, count(id_aula)
+from aula_curso_dpto
+group by rollup (departamento, curso);
+
+
 ------------------------------------------------------------------------------------------------------------------------------
 
+-- NVL()
+-- Contar todos los estudiantes que estén vinculados a un curso en la universidad. Agrupar por departamento.
+-- ados Todos los estudiantes NO relacionados con un curso serán mostrados como 'SIN CURSO'.
 
+
+select
+e2.NOMBRE_ESTUDIANTE,
+nvl(i.CURSO_ID, 'SIN CURSO') as curso
+from
+    INSCRIPCION i join ESTUDIANTE e on i.ESTUDIANTE_ID = e.ID_ESTUDIANTE
+    right join ESTUDIANTE e2 on e.ID_ESTUDIANTE = e2.ID_ESTUDIANTE
+
+------------------------------------------------------------------------------------------------------------------------------
+-- TODO NVL2()

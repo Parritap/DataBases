@@ -481,6 +481,25 @@ INSERT ALL
     INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST100', 'Martín', 'Cabrera', 'martin.cabrera@email.com', TO_DATE('1998-12-16', 'YYYY-MM-DD'), '2109876543')
 SELECT 1 FROM dual;
 
+-- Los siguientes serán los estudiantes sin curso, estos servirán para hacer uso de la función NVL().
+INSERT ALL
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST101', 'Gabriela', 'Martínez', 'gabriela.martinez@email.com', TO_DATE('1999-04-02', 'YYYY-MM-DD'), '9876543210')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST102', 'Ricardo', 'González', 'ricardo.gonzalez@email.com', TO_DATE('2000-07-18', 'YYYY-MM-DD'), '5647382910')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST103', 'Elena', 'Sánchez', 'elena.sanchez@email.com', TO_DATE('1999-09-05', 'YYYY-MM-DD'), '1092837465')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST104', 'Diego', 'Rodríguez', 'diego.rodriguez@email.com', TO_DATE('2001-01-30', 'YYYY-MM-DD'), '8765432109')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST105', 'María', 'Fernández', 'maria.fernandez@email.com', TO_DATE('2000-04-14', 'YYYY-MM-DD'), '2345678901')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST106', 'Pablo', 'López', 'pablo.lopez@email.com', TO_DATE('1998-08-27', 'YYYY-MM-DD'), '8901234567')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST107', 'Sara', 'Díaz', 'sara.diaz@email.com', TO_DATE('2000-12-22', 'YYYY-MM-DD'), '3456789012')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST108', 'Rafael', 'Pérez', 'rafael.perez@email.com', TO_DATE('1999-05-09', 'YYYY-MM-DD'), '6789012345')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST109', 'Isabel', 'Hernández', 'isabel.hernandez@email.com', TO_DATE('2001-09-02', 'YYYY-MM-DD'), '1230987654')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST110', 'Alejandro', 'Gómez', 'alejandro.gomez@email.com', TO_DATE('1998-11-15', 'YYYY-MM-DD'), '5678901234')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST111', 'Laura', 'Torres', 'laura.torres@email.com', TO_DATE('2000-03-08', 'YYYY-MM-DD'), '2109876543')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST112', 'Carlos', 'Fuentes', 'carlos.fuentes@email.com', TO_DATE('1999-06-24', 'YYYY-MM-DD'), '8907654321')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST113', 'Gabriela', 'Santos', 'gabriela.santos@email.com', TO_DATE('2001-11-17', 'YYYY-MM-DD'), '5432167890')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST114', 'Javier', 'Molina', 'javier.molina@email.com', TO_DATE('2000-02-03', 'YYYY-MM-DD'), '6789012345')
+INTO estudiante (id_estudiante, nombre_estudiante, apellido_estudiante, correo_estudiantil, fecha_nacimiento_estudiante, telefono_estudiante) VALUES ('EST115', 'Luisa', 'Ramírez', 'luisa.ramirez@email.com', TO_DATE('1998-10-28', 'YYYY-MM-DD'), '3456789012')
+SELECT 1 FROM dual;
+
 
 INSERT ALL
     INTO inscripcion (curso_id, estudiante_id) VALUES ('CUR037', 'EST001')
