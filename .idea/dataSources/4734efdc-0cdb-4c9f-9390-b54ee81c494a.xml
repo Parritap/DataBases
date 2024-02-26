@@ -67,9 +67,9 @@
     </schema>
     <schema id="22" parent="1" name="PUBLIC">
       <AutoIntrospectionLevel>1</AutoIntrospectionLevel>
-      <LastIntrospectionL1Timestamp>2024-02-25.16:11:07</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL1Timestamp>2024-02-25.19:55:34</LastIntrospectionL1Timestamp>
       <LastIntrospectionLevel>1</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-02-25.21:11:08</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-02-26.00:55:34</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="23" parent="1" name="REMOTE_SCHEDULER_AGENT">
@@ -100,13 +100,13 @@
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <Current>1</Current>
-      <LastIntrospectionL1Timestamp>2024-02-25.16:11:07</LastIntrospectionL1Timestamp>
-      <LastIntrospectionL2Timestamp>2024-02-25.16:11:07</LastIntrospectionL2Timestamp>
-      <LastIntrospectionL3Timestamp>2024-02-25.16:11:07</LastIntrospectionL3Timestamp>
+      <LastIntrospectionL1Timestamp>2024-02-25.19:55:34</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2024-02-25.19:55:34</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2024-02-25.19:55:34</LastIntrospectionL3Timestamp>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-02-25.21:11:08</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-02-26.00:55:34</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>200820</LastIntrospectionVersion>
-      <ModifiedTimestamp>2024-02-25.16:11:07</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-02-25.19:17:31</ModifiedTimestamp>
       <ObjectId>116</ObjectId>
     </schema>
     <schema id="32" parent="1" name="XDB">
@@ -53251,7 +53251,16 @@
       <ObjectId>77578</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <view id="6698" parent="31" name="AULA_EVENTO_FECHA">
+    <view id="6698" parent="31" name="AULA_CURSO_DPTO">
+      <CreatedTimestamp>2024-02-25.19:13:49</CreatedTimestamp>
+      <DependsOnIds>77561,77565,77567</DependsOnIds>
+      <DetailsLevel>3</DetailsLevel>
+      <Modifiable>1</Modifiable>
+      <ModifiedTimestamp>2024-02-25.19:17:31</ModifiedTimestamp>
+      <ObjectId>77746</ObjectId>
+      <SourceTextLength>214</SourceTextLength>
+    </view>
+    <view id="6699" parent="31" name="AULA_EVENTO_FECHA">
       <CreatedTimestamp>2024-02-25.16:11:07</CreatedTimestamp>
       <DependsOnIds>77561,77571</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53260,7 +53269,7 @@
       <ObjectId>77735</ObjectId>
       <SourceTextLength>259</SourceTextLength>
     </view>
-    <view id="6699" parent="31" name="CANTIDAD_INSCRIPCIONES">
+    <view id="6700" parent="31" name="CANTIDAD_INSCRIPCIONES">
       <CreatedTimestamp>2024-02-25.10:25:12</CreatedTimestamp>
       <DependsOnIds>77565,77573</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53269,7 +53278,7 @@
       <ObjectId>77669</ObjectId>
       <SourceTextLength>218</SourceTextLength>
     </view>
-    <view id="6700" parent="31" name="DEPARTAMENTO_CURSO_CANTESTUDIANTES">
+    <view id="6701" parent="31" name="DEPARTAMENTO_CURSO_CANTESTUDIANTES">
       <CreatedTimestamp>2024-02-25.11:26:25</CreatedTimestamp>
       <DependsOnIds>77565,77567,77573</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53278,7 +53287,7 @@
       <ObjectId>77670</ObjectId>
       <SourceTextLength>377</SourceTextLength>
     </view>
-    <view id="6701" parent="31" name="ESTUDIANTE_DEPARTAMENTO">
+    <view id="6702" parent="31" name="ESTUDIANTE_DEPARTAMENTO">
       <CreatedTimestamp>2024-02-25.14:14:14</CreatedTimestamp>
       <DependsOnIds>77565,77573</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53287,36 +53296,36 @@
       <ObjectId>77734</ObjectId>
       <SourceTextLength>116</SourceTextLength>
     </view>
-    <column id="6702" parent="6688" name="ID_AULA">
+    <column id="6703" parent="6688" name="ID_AULA">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6703" parent="6688" name="NOMBRE_AULA">
+    <column id="6704" parent="6688" name="NOMBRE_AULA">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6704" parent="6688" name="CAPACIDAD_AULA">
+    <column id="6705" parent="6688" name="CAPACIDAD_AULA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6705" parent="6688" name="TIPO_AULA">
+    <column id="6706" parent="6688" name="TIPO_AULA">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6706" parent="6688" name="DEPARTAMENTO_ID">
+    <column id="6707" parent="6688" name="DEPARTAMENTO_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="6707" parent="6688" name="AULA_DEPARTAMENTO_FK">
+    <foreign-key id="6708" parent="6688" name="AULA_DEPARTAMENTO_FK">
       <ColNames>DEPARTAMENTO_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>DEPARTAMENTO_PK</RefKeyName>
       <RefTableName>DEPARTAMENTO</RefTableName>
     </foreign-key>
-    <index id="6708" parent="6688" name="AULA_PK">
+    <index id="6709" parent="6688" name="AULA_PK">
       <ColNames>ID_AULA</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53324,22 +53333,22 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6709" parent="6688" name="AULA_PK">
+    <key id="6710" parent="6688" name="AULA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>AULA_PK</UnderlyingIndexName>
     </key>
-    <column id="6710" parent="6689" name="ID_BIBLIOTECA">
+    <column id="6711" parent="6689" name="ID_BIBLIOTECA">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6711" parent="6689" name="NOMBRE_BIBLIOTECA">
+    <column id="6712" parent="6689" name="NOMBRE_BIBLIOTECA">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6712" parent="6689" name="BIBLIOTECA_PK">
+    <index id="6713" parent="6689" name="BIBLIOTECA_PK">
       <ColNames>ID_BIBLIOTECA</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53347,62 +53356,62 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6713" parent="6689" name="BIBLIOTECA_PK">
+    <key id="6714" parent="6689" name="BIBLIOTECA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>BIBLIOTECA_PK</UnderlyingIndexName>
     </key>
-    <column id="6714" parent="6690" name="ID_CURSO">
+    <column id="6715" parent="6690" name="ID_CURSO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6715" parent="6690" name="NOMBRE_CURSO">
+    <column id="6716" parent="6690" name="NOMBRE_CURSO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6716" parent="6690" name="HORARIO_CURSO">
+    <column id="6717" parent="6690" name="HORARIO_CURSO">
       <DasType>DATE|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6717" parent="6690" name="PROFESOR_ID">
+    <column id="6718" parent="6690" name="PROFESOR_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="6718" parent="6690" name="AULA_ID">
+    <column id="6719" parent="6690" name="AULA_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="6719" parent="6690" name="DEPARTAMENTO_ID">
+    <column id="6720" parent="6690" name="DEPARTAMENTO_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <foreign-key id="6720" parent="6690" name="CURSO_PROFESOR_FK">
+    <foreign-key id="6721" parent="6690" name="CURSO_PROFESOR_FK">
       <ColNames>PROFESOR_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>PROFESOR_PK</RefKeyName>
       <RefTableName>PROFESOR</RefTableName>
     </foreign-key>
-    <foreign-key id="6721" parent="6690" name="CURSO_AULA_FK">
+    <foreign-key id="6722" parent="6690" name="CURSO_AULA_FK">
       <ColNames>AULA_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>AULA_PK</RefKeyName>
       <RefTableName>AULA</RefTableName>
     </foreign-key>
-    <foreign-key id="6722" parent="6690" name="CURSO_DEPARTAMENTO_FK">
+    <foreign-key id="6723" parent="6690" name="CURSO_DEPARTAMENTO_FK">
       <ColNames>DEPARTAMENTO_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>DEPARTAMENTO_PK</RefKeyName>
       <RefTableName>DEPARTAMENTO</RefTableName>
     </foreign-key>
-    <index id="6723" parent="6690" name="CURSO_PK">
+    <index id="6724" parent="6690" name="CURSO_PK">
       <ColNames>ID_CURSO</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53410,22 +53419,22 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6724" parent="6690" name="CURSO_PK">
+    <key id="6725" parent="6690" name="CURSO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>CURSO_PK</UnderlyingIndexName>
     </key>
-    <column id="6725" parent="6691" name="ID_DEPARTAMENTO">
+    <column id="6726" parent="6691" name="ID_DEPARTAMENTO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6726" parent="6691" name="NOMBRE_DEPARTAMENTO">
+    <column id="6727" parent="6691" name="NOMBRE_DEPARTAMENTO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6727" parent="6691" name="DEPARTAMENTO_PK">
+    <index id="6728" parent="6691" name="DEPARTAMENTO_PK">
       <ColNames>ID_DEPARTAMENTO</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53433,38 +53442,38 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6728" parent="6691" name="DEPARTAMENTO_PK">
+    <key id="6729" parent="6691" name="DEPARTAMENTO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>DEPARTAMENTO_PK</UnderlyingIndexName>
     </key>
-    <column id="6729" parent="6692" name="ID_ESTUDIANTE">
+    <column id="6730" parent="6692" name="ID_ESTUDIANTE">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6730" parent="6692" name="NOMBRE_ESTUDIANTE">
+    <column id="6731" parent="6692" name="NOMBRE_ESTUDIANTE">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6731" parent="6692" name="APELLIDO_ESTUDIANTE">
+    <column id="6732" parent="6692" name="APELLIDO_ESTUDIANTE">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6732" parent="6692" name="CORREO_ESTUDIANTIL">
+    <column id="6733" parent="6692" name="CORREO_ESTUDIANTIL">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6733" parent="6692" name="FECHA_NACIMIENTO_ESTUDIANTE">
+    <column id="6734" parent="6692" name="FECHA_NACIMIENTO_ESTUDIANTE">
       <DasType>DATE|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6734" parent="6692" name="TELEFONO_ESTUDIANTE">
+    <column id="6735" parent="6692" name="TELEFONO_ESTUDIANTE">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="6735" parent="6692" name="ESTUDIANTE_PK">
+    <index id="6736" parent="6692" name="ESTUDIANTE_PK">
       <ColNames>ID_ESTUDIANTE</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53472,46 +53481,46 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6736" parent="6692" name="ESTUDIANTE_PK">
+    <key id="6737" parent="6692" name="ESTUDIANTE_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>ESTUDIANTE_PK</UnderlyingIndexName>
     </key>
-    <column id="6737" parent="6693" name="ID_EVENTO">
+    <column id="6738" parent="6693" name="ID_EVENTO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6738" parent="6693" name="NOMBRE_EVENTO">
+    <column id="6739" parent="6693" name="NOMBRE_EVENTO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6739" parent="6693" name="TIPO_EVENTO">
+    <column id="6740" parent="6693" name="TIPO_EVENTO">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6740" parent="6693" name="LUGAR_EVENTO">
+    <column id="6741" parent="6693" name="LUGAR_EVENTO">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6741" parent="6693" name="FECHA_EVENTO">
+    <column id="6742" parent="6693" name="FECHA_EVENTO">
       <DasType>DATE|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6742" parent="6693" name="AULA_ID">
+    <column id="6743" parent="6693" name="AULA_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <foreign-key id="6743" parent="6693" name="EVENTO_AULA_FK">
+    <foreign-key id="6744" parent="6693" name="EVENTO_AULA_FK">
       <ColNames>AULA_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>AULA_PK</RefKeyName>
       <RefTableName>AULA</RefTableName>
     </foreign-key>
-    <index id="6744" parent="6693" name="EVENTO_PK">
+    <index id="6745" parent="6693" name="EVENTO_PK">
       <ColNames>ID_EVENTO</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53519,58 +53528,58 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6745" parent="6693" name="EVENTO_PK">
+    <key id="6746" parent="6693" name="EVENTO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>EVENTO_PK</UnderlyingIndexName>
     </key>
-    <column id="6746" parent="6694" name="CURSO_ID">
+    <column id="6747" parent="6694" name="CURSO_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6747" parent="6694" name="ESTUDIANTE_ID">
+    <column id="6748" parent="6694" name="ESTUDIANTE_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="6748" parent="6694" name="INSCRIPCION_CURSO_FK">
+    <foreign-key id="6749" parent="6694" name="INSCRIPCION_CURSO_FK">
       <ColNames>CURSO_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CURSO_PK</RefKeyName>
       <RefTableName>CURSO</RefTableName>
     </foreign-key>
-    <foreign-key id="6749" parent="6694" name="INSCRIPCION_ESTUDIANTE_FK">
+    <foreign-key id="6750" parent="6694" name="INSCRIPCION_ESTUDIANTE_FK">
       <ColNames>ESTUDIANTE_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>ESTUDIANTE_PK</RefKeyName>
       <RefTableName>ESTUDIANTE</RefTableName>
     </foreign-key>
-    <column id="6750" parent="6695" name="ID_LIBRO">
+    <column id="6751" parent="6695" name="ID_LIBRO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6751" parent="6695" name="NOMBRE_LIBRO">
+    <column id="6752" parent="6695" name="NOMBRE_LIBRO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6752" parent="6695" name="GENERO_LIBRO">
+    <column id="6753" parent="6695" name="GENERO_LIBRO">
       <DasType>VARCHAR2(100 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6753" parent="6695" name="AUTOR_LIBRO">
+    <column id="6754" parent="6695" name="AUTOR_LIBRO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6754" parent="6695" name="NUM_PAGINAS">
+    <column id="6755" parent="6695" name="NUM_PAGINAS">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="6755" parent="6695" name="LIBRO_PK">
+    <index id="6756" parent="6695" name="LIBRO_PK">
       <ColNames>ID_LIBRO</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:53</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
@@ -53578,61 +53587,61 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6756" parent="6695" name="LIBRO_PK">
+    <key id="6757" parent="6695" name="LIBRO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:53</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>LIBRO_PK</UnderlyingIndexName>
     </key>
-    <column id="6757" parent="6696" name="PRESTAMO_ID">
+    <column id="6758" parent="6696" name="PRESTAMO_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6758" parent="6696" name="ESTUDIANTE_ID">
+    <column id="6759" parent="6696" name="ESTUDIANTE_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="6759" parent="6696" name="BIBLIOTECA_ID">
+    <column id="6760" parent="6696" name="BIBLIOTECA_ID">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="6760" parent="6696" name="FECHA_PRESTAMO">
+    <column id="6761" parent="6696" name="FECHA_PRESTAMO">
       <DasType>DATE|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6761" parent="6696" name="FECHA_DEVOLUCION">
+    <column id="6762" parent="6696" name="FECHA_DEVOLUCION">
       <DasType>DATE|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6762" parent="6696" name="LIBRO_ID">
+    <column id="6763" parent="6696" name="LIBRO_ID">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>6</Position>
     </column>
-    <foreign-key id="6763" parent="6696" name="PRESTAMO_ESTUDIANTE_FK">
+    <foreign-key id="6764" parent="6696" name="PRESTAMO_ESTUDIANTE_FK">
       <ColNames>ESTUDIANTE_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>ESTUDIANTE_PK</RefKeyName>
       <RefTableName>ESTUDIANTE</RefTableName>
     </foreign-key>
-    <foreign-key id="6764" parent="6696" name="PRESTAMO_BIBLIOTECA_FK">
+    <foreign-key id="6765" parent="6696" name="PRESTAMO_BIBLIOTECA_FK">
       <ColNames>BIBLIOTECA_ID</ColNames>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>BIBLIOTECA_PK</RefKeyName>
       <RefTableName>BIBLIOTECA</RefTableName>
     </foreign-key>
-    <foreign-key id="6765" parent="6696" name="PRESTAMO_LIBRO_FK">
+    <foreign-key id="6766" parent="6696" name="PRESTAMO_LIBRO_FK">
       <ColNames>LIBRO_ID</ColNames>
       <ModifiedTimestamp>2024-02-25.12:27:20</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>LIBRO_PK</RefKeyName>
       <RefTableName>LIBRO</RefTableName>
     </foreign-key>
-    <index id="6766" parent="6696" name="PRESTAMO_PK">
+    <index id="6767" parent="6696" name="PRESTAMO_PK">
       <ColNames>PRESTAMO_ID</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:54</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
@@ -53640,38 +53649,38 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6767" parent="6696" name="PRESTAMO_PK">
+    <key id="6768" parent="6696" name="PRESTAMO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRESTAMO_PK</UnderlyingIndexName>
     </key>
-    <column id="6768" parent="6697" name="ID_PROFESOR">
+    <column id="6769" parent="6697" name="ID_PROFESOR">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6769" parent="6697" name="NOMBRE_PROFESOR">
+    <column id="6770" parent="6697" name="NOMBRE_PROFESOR">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6770" parent="6697" name="APELLIDO_PROFESOR">
+    <column id="6771" parent="6697" name="APELLIDO_PROFESOR">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6771" parent="6697" name="TELEFONO_PROFESOR">
+    <column id="6772" parent="6697" name="TELEFONO_PROFESOR">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6772" parent="6697" name="CORREO_INSTITUCIONAL">
+    <column id="6773" parent="6697" name="CORREO_INSTITUCIONAL">
       <DasType>VARCHAR2(100 byte)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6773" parent="6697" name="ESPECIALIZACION_PROFESOR">
+    <column id="6774" parent="6697" name="ESPECIALIZACION_PROFESOR">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="6774" parent="6697" name="PROFESOR_PK">
+    <index id="6775" parent="6697" name="PROFESOR_PK">
       <ColNames>ID_PROFESOR</ColNames>
       <CreatedTimestamp>2024-02-24.14:25:54</CreatedTimestamp>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
@@ -53679,68 +53688,81 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6775" parent="6697" name="PROFESOR_PK">
+    <key id="6776" parent="6697" name="PROFESOR_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-02-24.14:25:54</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PROFESOR_PK</UnderlyingIndexName>
     </key>
-    <column id="6776" parent="6698" name="ID_AULA">
+    <column id="6777" parent="6698" name="DEPARTAMENTO">
+      <DasType>VARCHAR2(50 byte)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="6778" parent="6698" name="CURSO">
+      <DasType>VARCHAR2(50 byte)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="6779" parent="6698" name="ID_AULA">
+      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="6780" parent="6699" name="ID_AULA">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6777" parent="6698" name="AULA">
+    <column id="6781" parent="6699" name="AULA">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6778" parent="6698" name="EVENTO">
+    <column id="6782" parent="6699" name="EVENTO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6779" parent="6698" name="FECHA_EVENTO">
+    <column id="6783" parent="6699" name="FECHA_EVENTO">
       <DasType>DATE|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6780" parent="6698" name="ANIO_EVENTO">
+    <column id="6784" parent="6699" name="ANIO_EVENTO">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6781" parent="6698" name="MES_EVENTO">
+    <column id="6785" parent="6699" name="MES_EVENTO">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="6782" parent="6699" name="ID_CURSO">
+    <column id="6786" parent="6700" name="ID_CURSO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6783" parent="6699" name="CURSO">
+    <column id="6787" parent="6700" name="CURSO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6784" parent="6699" name="CANTIDAD_INSCRITOS">
+    <column id="6788" parent="6700" name="CANTIDAD_INSCRITOS">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6785" parent="6700" name="DEPARTAMENTO">
+    <column id="6789" parent="6701" name="DEPARTAMENTO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="6786" parent="6700" name="CURSO">
+    <column id="6790" parent="6701" name="CURSO">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6787" parent="6700" name="CANTIDAD_ESTUDIANTES">
+    <column id="6791" parent="6701" name="CANTIDAD_ESTUDIANTES">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6788" parent="6701" name="ID_ESTUDIANTE">
+    <column id="6792" parent="6702" name="ID_ESTUDIANTE">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6789" parent="6701" name="ID_DPTO">
+    <column id="6793" parent="6702" name="ID_DPTO">
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
