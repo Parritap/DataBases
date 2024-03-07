@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9503bc-e626-42dd-8717-a3f1bfd59f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hospital/ex_hospital.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hospital/hospital.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/store/preparcial.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4734efdc-0cdb-4c9f-9390-b54ee81c494a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4734efdc-0cdb-4c9f-9390-b54ee81c494a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6/storage_v2/_src_/schema/STORE.wQC5BA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6/storage_v2/_src_/schema/STORE.wQC5BA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/universidad/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/ex_uni.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/universidad/ex_uni.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/universidad.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/universidad/universidad.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/preparcial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/preparcial.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,30 +33,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/Parritap/Documents/DB&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/Parritap/Documents/DB",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;oracle&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "oracle"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect&quot;: [
-      &quot;OracleSqlPlus&quot;,
-      &quot;Oracle&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect": [
+      "OracleSqlPlus",
+      "Oracle"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;OracleSqlPlus&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "OracleSqlPlus"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Oracle/Modelos/universidad" />

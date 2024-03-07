@@ -82,3 +82,16 @@ from reporte_producto
 group by rollup ( categoria, subcategoria)
 
 -- Punto 3
+
+-- Cree una consulta de referencia cruzada que permita conocer por cada ciudad el total
+-- de dinero recaudado en cada una de las siguientes categorías:
+-- Electrodoméstico, juguetería, Ropa, Artículos para el hogar, mercado)
+
+-- Primero: Crear una vista de ventas por categoría (no necesariamente total de ventas)
+-- 
+
+select COUNT(*) cols
+from SYS.ALL_TAB_COLUMNS
+where TABLE_NAME = 'CIUDAD';
+
+
