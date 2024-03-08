@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9503bc-e626-42dd-8717-a3f1bfd59f9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6/storage_v2/_src_/schema/STORE.wQC5BA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6/storage_v2/_src_/schema/STORE.wQC5BA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" afterDir="false" />
     </list>

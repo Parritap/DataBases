@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/hospital/ex_hospital.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/hospital/hospital.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/store/preparcial.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/universidad/ex_uni.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/universidad/universidad.sql" dialect="OracleSqlPlus" />
