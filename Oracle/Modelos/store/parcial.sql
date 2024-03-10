@@ -37,14 +37,16 @@ connect by prior p.ID_PRODUCTO_COMPUESTO = p.IDPRODUCTO;
 
 -- Tabla de utilidad por producto
 
-select id, producto, ganancia,
+select id,
+       producto,
+       ganancia,
        case
            when ganancia > 1000000 THEN 'alta'
            when ganancia >= 300000 THEN 'media'
            else 'baja'
            end prioridad
-from (select p.IDPRODUCTO id,
-             p.NOMBREPRODUCTO producto,
+from (select p.IDPRODUCTO                           id,
+             p.NOMBREPRODUCTO                       producto,
              SUM(p.PRECIOVENTA - p.PRECIOCOMPRA) as ganancia
       FROM FACTURAVENTA f
                JOIN DETALLEVENTA d ON F.NUMEROORDEN = d.NUMEROORDEN
@@ -52,11 +54,38 @@ from (select p.IDPRODUCTO id,
       group by p.NOMBREPRODUCTO, p.IDPRODUCTO) sub
 
 
-select * from  PRODUCTO;
+select *
+from PRODUCTO;
 
 
 
-select * from FACTURAVENTA f
-               JOIN DETALLEVENTA d ON F.NUMEROORDEN = d.NUMEROORDEN
-               RIGHT JOIN PRODUCTO p ON d.IDPRODUCTO = P.IDPRODUCTO
-where p.IDPRODUCTO=6
+select *
+from FACTURAVENTA f
+         JOIN DETALLEVENTA d ON F.NUMEROORDEN = d.NUMEROORDEN
+         RIGHT JOIN PRODUCTO p ON d.IDPRODUCTO = P.IDPRODUCTO
+where p.IDPRODUCTO = 6
+
+------------------------------------------------------------------------------------
+
+select p.IDPRODUCTO,
+       p.NOMBREPRODUCTO
+from PRODUCTO p
+where CATEGORIA_IDCATEGORIA = '1'
+connect by prior p.IDPRODUCTO = p.ID_PRODUCTO_COMPUESTO
+
+
+-- ------------------------------------------------------------------
+-- PUNTO 2 --> CORRECTO.
+select sub.IDPRODUCTO id,
+       sub.NOMBREPRODUCTO,
+       sub.lvl,
+       SUM (GANANCIA * d.CANTIDAD) ganancias
+from (select p.IDPRODUCTO,
+             p.NOMBREPRODUCTO,
+             level as lvl,
+             (P.PRECIOVENTA - P.PRECIOCOMPRA ) ganancia
+      from PRODUCTO p
+      connect by prior p.IDPRODUCTO = p.ID_PRODUCTO_COMPUESTO
+      start with (p.CATEGORIA_IDCATEGORIA = '1')) sub
+left join DETALLEVENTA d on (sub.IDPRODUCTO = d.IDPRODUCTO)
+group by sub.IDPRODUCTO, sub.NOMBREPRODUCTO, sub.lvl;

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9503bc-e626-42dd-8717-a3f1bfd59f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/vehicles/vehicle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/store.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "grid.search.filter.rows": "true",
     "last_opened_file_path": "/home/Parritap/Documents/DB",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   },

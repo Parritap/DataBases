@@ -73,9 +73,9 @@
     </schema>
     <schema id="24" parent="1" name="PUBLIC">
       <AutoIntrospectionLevel>1</AutoIntrospectionLevel>
-      <LastIntrospectionL1Timestamp>2024-03-07.21:46:48</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL1Timestamp>2024-03-10.14:39:44</LastIntrospectionL1Timestamp>
       <LastIntrospectionLevel>1</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-03-08.02:46:49</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-10.19:39:45</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
     </schema>
     <schema id="25" parent="1" name="REMOTE_SCHEDULER_AGENT">
@@ -85,13 +85,13 @@
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <Current>1</Current>
-      <LastIntrospectionL1Timestamp>2024-03-07.21:46:48</LastIntrospectionL1Timestamp>
-      <LastIntrospectionL2Timestamp>2024-03-07.21:46:48</LastIntrospectionL2Timestamp>
-      <LastIntrospectionL3Timestamp>2024-03-07.21:46:48</LastIntrospectionL3Timestamp>
+      <LastIntrospectionL1Timestamp>2024-03-10.14:39:44</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2024-03-10.14:39:44</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2024-03-10.14:39:44</LastIntrospectionL3Timestamp>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-03-08.02:46:49</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-10.19:39:45</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>200820</LastIntrospectionVersion>
-      <ModifiedTimestamp>2024-03-07.21:46:38</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-03-10.14:39:36</ModifiedTimestamp>
       <ObjectId>130</ObjectId>
     </schema>
     <schema id="27" parent="1" name="SYS">
@@ -53290,7 +53290,14 @@
       <ObjectId>78456</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <view id="6707" parent="26" name="CANTIDAD_TRIMESTRES">
+    <table id="6707" parent="26" name="VEHICLE">
+      <CreatedTimestamp>2024-03-10.14:39:36</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2024-03-10.14:39:36</ModifiedTimestamp>
+      <ObjectId>78631</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <view id="6708" parent="26" name="CANTIDAD_TRIMESTRES">
       <CreatedTimestamp>2024-03-07.16:57:40</CreatedTimestamp>
       <DependsOnIds>78451</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53299,7 +53306,7 @@
       <ObjectId>78591</ObjectId>
       <SourceTextLength>194</SourceTextLength>
     </view>
-    <view id="6708" parent="26" name="INFO_FINANCIERA_PRODUCTO">
+    <view id="6709" parent="26" name="INFO_FINANCIERA_PRODUCTO">
       <CreatedTimestamp>2024-03-03.17:25:18</CreatedTimestamp>
       <DependsOnIds>78453,78470</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53308,7 +53315,7 @@
       <ObjectId>78471</ObjectId>
       <SourceTextLength>354</SourceTextLength>
     </view>
-    <view id="6709" parent="26" name="PRODUCTO_DETALLES">
+    <view id="6710" parent="26" name="PRODUCTO_DETALLES">
       <CreatedTimestamp>2024-03-03.16:23:11</CreatedTimestamp>
       <DependsOnIds>78448,78453</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53317,7 +53324,7 @@
       <ObjectId>78470</ObjectId>
       <SourceTextLength>192</SourceTextLength>
     </view>
-    <view id="6710" parent="26" name="PROMEDIO_VENTAS_TRIMESTRE">
+    <view id="6711" parent="26" name="PROMEDIO_VENTAS_TRIMESTRE">
       <CreatedTimestamp>2024-03-07.19:00:07</CreatedTimestamp>
       <DependsOnIds>78448,78451,78453</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53326,7 +53333,7 @@
       <ObjectId>78604</ObjectId>
       <SourceTextLength>474</SourceTextLength>
     </view>
-    <view id="6711" parent="26" name="REPORTE_PRODUCTO">
+    <view id="6712" parent="26" name="REPORTE_PRODUCTO">
       <CreatedTimestamp>2024-03-03.17:51:38</CreatedTimestamp>
       <DependsOnIds>78444,78448,78453</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -53336,27 +53343,27 @@
       <ObjectId>78472</ObjectId>
       <SourceTextLength>618</SourceTextLength>
     </view>
-    <column id="6712" parent="6694" name="IDCATEGORIA">
+    <column id="6713" parent="6694" name="IDCATEGORIA">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6713" parent="6694" name="DESCRIPCION">
+    <column id="6714" parent="6694" name="DESCRIPCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6714" parent="6694" name="IDCATEGORIAPADRE">
+    <column id="6715" parent="6694" name="IDCATEGORIAPADRE">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <foreign-key id="6715" parent="6694" name="CATEGORIASUBCATEGORIAFK">
+    <foreign-key id="6716" parent="6694" name="CATEGORIASUBCATEGORIAFK">
       <ColNames>IDCATEGORIAPADRE</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CATEGORIA_PK</RefKeyName>
       <RefTableName>CATEGORIA</RefTableName>
     </foreign-key>
-    <index id="6716" parent="6694" name="CATEGORIA_PK">
+    <index id="6717" parent="6694" name="CATEGORIA_PK">
       <ColNames>IDCATEGORIA</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53364,38 +53371,38 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6717" parent="6694" name="CATEGORIA_PK">
+    <key id="6718" parent="6694" name="CATEGORIA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>CATEGORIA_PK</UnderlyingIndexName>
     </key>
-    <column id="6718" parent="6695" name="IDCIUDAD">
+    <column id="6719" parent="6695" name="IDCIUDAD">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6719" parent="6695" name="IDPROVINCIA">
+    <column id="6720" parent="6695" name="IDPROVINCIA">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="6720" parent="6695" name="CODIGOPOSTAL">
+    <column id="6721" parent="6695" name="CODIGOPOSTAL">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6721" parent="6695" name="NOMBRE">
+    <column id="6722" parent="6695" name="NOMBRE">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="6722" parent="6695" name="CIUDAD_PROVINCIA_FK">
+    <foreign-key id="6723" parent="6695" name="CIUDAD_PROVINCIA_FK">
       <ColNames>IDPROVINCIA</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>PROVINCIA_PK</RefKeyName>
       <RefTableName>PROVINCIA</RefTableName>
     </foreign-key>
-    <index id="6723" parent="6695" name="CIUDAD_PK">
+    <index id="6724" parent="6695" name="CIUDAD_PK">
       <ColNames>IDCIUDAD</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53403,38 +53410,38 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6724" parent="6695" name="CIUDAD_PK">
+    <key id="6725" parent="6695" name="CIUDAD_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>CIUDAD_PK</UnderlyingIndexName>
     </key>
-    <column id="6725" parent="6696" name="IDCLIENTE">
+    <column id="6726" parent="6696" name="IDCLIENTE">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6726" parent="6696" name="NOMBRE">
+    <column id="6727" parent="6696" name="NOMBRE">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6727" parent="6696" name="APELLIDO">
+    <column id="6728" parent="6696" name="APELLIDO">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6728" parent="6696" name="EMAIL">
+    <column id="6729" parent="6696" name="EMAIL">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6729" parent="6696" name="TELEFONO">
+    <column id="6730" parent="6696" name="TELEFONO">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6730" parent="6696" name="FECHAINACTIVO">
+    <column id="6731" parent="6696" name="FECHAINACTIVO">
       <DasType>DATE|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="6731" parent="6696" name="CLIENTE_PK">
+    <index id="6732" parent="6696" name="CLIENTE_PK">
       <ColNames>IDCLIENTE</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53442,22 +53449,22 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6732" parent="6696" name="CLIENTE_PK">
+    <key id="6733" parent="6696" name="CLIENTE_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>CLIENTE_PK</UnderlyingIndexName>
     </key>
-    <column id="6733" parent="6697" name="IDCOLOR">
+    <column id="6734" parent="6697" name="IDCOLOR">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6734" parent="6697" name="DESCRIPCION">
+    <column id="6735" parent="6697" name="DESCRIPCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6735" parent="6697" name="COLOR_PK">
+    <index id="6736" parent="6697" name="COLOR_PK">
       <ColNames>IDCOLOR</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53465,45 +53472,45 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6736" parent="6697" name="COLOR_PK">
+    <key id="6737" parent="6697" name="COLOR_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>COLOR_PK</UnderlyingIndexName>
     </key>
-    <column id="6737" parent="6698" name="NUMEROORDEN">
+    <column id="6738" parent="6698" name="NUMEROORDEN">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6738" parent="6698" name="IDPRODUCTO">
+    <column id="6739" parent="6698" name="IDPRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="6739" parent="6698" name="CANTIDAD">
+    <column id="6740" parent="6698" name="CANTIDAD">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6740" parent="6698" name="PRECIOUNITARIO">
+    <column id="6741" parent="6698" name="PRECIOUNITARIO">
       <DasType>FLOAT(*)|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="6741" parent="6698" name="DETALLEVENTA_FACTURAVENTA_FK">
+    <foreign-key id="6742" parent="6698" name="DETALLEVENTA_FACTURAVENTA_FK">
       <ColNames>NUMEROORDEN</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>FACTURAVENTA_PK</RefKeyName>
       <RefTableName>FACTURAVENTA</RefTableName>
     </foreign-key>
-    <foreign-key id="6742" parent="6698" name="DETALLEVENTA_PRODUCTO_FK">
+    <foreign-key id="6743" parent="6698" name="DETALLEVENTA_PRODUCTO_FK">
       <ColNames>IDPRODUCTO</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>PRODUCTO_PK</RefKeyName>
       <RefTableName>PRODUCTO</RefTableName>
     </foreign-key>
-    <index id="6743" parent="6698" name="DETALLEVENTA_PK">
+    <index id="6744" parent="6698" name="DETALLEVENTA_PK">
       <ColNames>NUMEROORDEN
 IDPRODUCTO</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
@@ -53512,58 +53519,58 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6744" parent="6698" name="DETALLEVENTA_PK">
+    <key id="6745" parent="6698" name="DETALLEVENTA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>DETALLEVENTA_PK</UnderlyingIndexName>
     </key>
-    <column id="6745" parent="6699" name="IDDIRECCIÓN">
+    <column id="6746" parent="6699" name="IDDIRECCIÓN">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6746" parent="6699" name="DIRECCIÓN">
+    <column id="6747" parent="6699" name="DIRECCIÓN">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6747" parent="6699" name="IDCIUDAD">
+    <column id="6748" parent="6699" name="IDCIUDAD">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="6748" parent="6699" name="IDCLIENTE">
+    <column id="6749" parent="6699" name="IDCLIENTE">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="6749" parent="6699" name="IDTIPO">
+    <column id="6750" parent="6699" name="IDTIPO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="6750" parent="6699" name="DIRECCION_CIUDAD_FK">
+    <foreign-key id="6751" parent="6699" name="DIRECCION_CIUDAD_FK">
       <ColNames>IDCIUDAD</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CIUDAD_PK</RefKeyName>
       <RefTableName>CIUDAD</RefTableName>
     </foreign-key>
-    <foreign-key id="6751" parent="6699" name="DIRECCION_CLIENTE_FK">
+    <foreign-key id="6752" parent="6699" name="DIRECCION_CLIENTE_FK">
       <ColNames>IDCLIENTE</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CLIENTE_PK</RefKeyName>
       <RefTableName>CLIENTE</RefTableName>
     </foreign-key>
-    <foreign-key id="6752" parent="6699" name="DIRECCION_TIPODIRECCION_FK">
+    <foreign-key id="6753" parent="6699" name="DIRECCION_TIPODIRECCION_FK">
       <ColNames>IDTIPO</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>TIPODIRECCION_PK</RefKeyName>
       <RefTableName>TIPODIRECCION</RefTableName>
     </foreign-key>
-    <index id="6753" parent="6699" name="DIRECCION_PK">
+    <index id="6754" parent="6699" name="DIRECCION_PK">
       <ColNames>IDDIRECCIÓN</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53571,22 +53578,22 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6754" parent="6699" name="DIRECCION_PK">
+    <key id="6755" parent="6699" name="DIRECCION_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>DIRECCION_PK</UnderlyingIndexName>
     </key>
-    <column id="6755" parent="6700" name="IDESTADO">
+    <column id="6756" parent="6700" name="IDESTADO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6756" parent="6700" name="DESCRIPCION">
+    <column id="6757" parent="6700" name="DESCRIPCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6757" parent="6700" name="ESTADOVENTA_PK">
+    <index id="6758" parent="6700" name="ESTADOVENTA_PK">
       <ColNames>IDESTADO</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53594,46 +53601,46 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6758" parent="6700" name="ESTADOVENTA_PK">
+    <key id="6759" parent="6700" name="ESTADOVENTA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>ESTADOVENTA_PK</UnderlyingIndexName>
     </key>
-    <column id="6759" parent="6701" name="NUMEROORDEN">
+    <column id="6760" parent="6701" name="NUMEROORDEN">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6760" parent="6701" name="FECHA">
+    <column id="6761" parent="6701" name="FECHA">
       <DasType>DATE|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6761" parent="6701" name="IDCLIENTE">
+    <column id="6762" parent="6701" name="IDCLIENTE">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="6762" parent="6701" name="IDESTADO">
+    <column id="6763" parent="6701" name="IDESTADO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="6763" parent="6701" name="FACTURAVENTA_CLIENTE_FK">
+    <foreign-key id="6764" parent="6701" name="FACTURAVENTA_CLIENTE_FK">
       <ColNames>IDCLIENTE</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CLIENTE_PK</RefKeyName>
       <RefTableName>CLIENTE</RefTableName>
     </foreign-key>
-    <foreign-key id="6764" parent="6701" name="FACTURAVENTA_ESTADOVENTA_FK">
+    <foreign-key id="6765" parent="6701" name="FACTURAVENTA_ESTADOVENTA_FK">
       <ColNames>IDESTADO</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>ESTADOVENTA_PK</RefKeyName>
       <RefTableName>ESTADOVENTA</RefTableName>
     </foreign-key>
-    <index id="6765" parent="6701" name="FACTURAVENTA_PK">
+    <index id="6766" parent="6701" name="FACTURAVENTA_PK">
       <ColNames>NUMEROORDEN</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53641,38 +53648,38 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6766" parent="6701" name="FACTURAVENTA_PK">
+    <key id="6767" parent="6701" name="FACTURAVENTA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>FACTURAVENTA_PK</UnderlyingIndexName>
     </key>
-    <column id="6767" parent="6702" name="IDHISTORIAL">
+    <column id="6768" parent="6702" name="IDHISTORIAL">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6768" parent="6702" name="FECHAACCIÓN">
+    <column id="6769" parent="6702" name="FECHAACCIÓN">
       <DasType>DATE|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6769" parent="6702" name="TIPOACCION">
+    <column id="6770" parent="6702" name="TIPOACCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6770" parent="6702" name="IDPRODUCTO">
+    <column id="6771" parent="6702" name="IDPRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="6771" parent="6702" name="HISTORIALPRODUCTO_PRODUCTO_FK">
+    <foreign-key id="6772" parent="6702" name="HISTORIALPRODUCTO_PRODUCTO_FK">
       <ColNames>IDPRODUCTO</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>PRODUCTO_PK</RefKeyName>
       <RefTableName>PRODUCTO</RefTableName>
     </foreign-key>
-    <index id="6772" parent="6702" name="HISTORIALPRODUCTO_PK">
+    <index id="6773" parent="6702" name="HISTORIALPRODUCTO_PK">
       <ColNames>IDHISTORIAL</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53680,73 +53687,73 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6773" parent="6702" name="HISTORIALPRODUCTO_PK">
+    <key id="6774" parent="6702" name="HISTORIALPRODUCTO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>HISTORIALPRODUCTO_PK</UnderlyingIndexName>
     </key>
-    <column id="6774" parent="6703" name="IDPRODUCTO">
+    <column id="6775" parent="6703" name="IDPRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6775" parent="6703" name="NOMBREPRODUCTO">
+    <column id="6776" parent="6703" name="NOMBREPRODUCTO">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6776" parent="6703" name="DESCRIPCIÓN">
+    <column id="6777" parent="6703" name="DESCRIPCIÓN">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6777" parent="6703" name="CATEGORIA_IDCATEGORIA">
+    <column id="6778" parent="6703" name="CATEGORIA_IDCATEGORIA">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="6778" parent="6703" name="COLOR_IDCOLOR">
+    <column id="6779" parent="6703" name="COLOR_IDCOLOR">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="6779" parent="6703" name="PRECIOVENTA">
+    <column id="6780" parent="6703" name="PRECIOVENTA">
       <DasType>FLOAT(*)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="6780" parent="6703" name="PRECIOCOMPRA">
+    <column id="6781" parent="6703" name="PRECIOCOMPRA">
       <DasType>FLOAT(*)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="6781" parent="6703" name="CANTIDAD">
+    <column id="6782" parent="6703" name="CANTIDAD">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="6782" parent="6703" name="ID_PRODUCTO_COMPUESTO">
+    <column id="6783" parent="6703" name="ID_PRODUCTO_COMPUESTO">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>9</Position>
     </column>
-    <foreign-key id="6783" parent="6703" name="PRODUCTO_CATEGORIA_FK">
+    <foreign-key id="6784" parent="6703" name="PRODUCTO_CATEGORIA_FK">
       <ColNames>CATEGORIA_IDCATEGORIA</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>CATEGORIA_PK</RefKeyName>
       <RefTableName>CATEGORIA</RefTableName>
     </foreign-key>
-    <foreign-key id="6784" parent="6703" name="PRODUCTO_COLOR_FK">
+    <foreign-key id="6785" parent="6703" name="PRODUCTO_COLOR_FK">
       <ColNames>COLOR_IDCOLOR</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>COLOR_PK</RefKeyName>
       <RefTableName>COLOR</RefTableName>
     </foreign-key>
-    <foreign-key id="6785" parent="6703" name="PRODUCTO_PRODUCTO_COMPUESTO">
+    <foreign-key id="6786" parent="6703" name="PRODUCTO_PRODUCTO_COMPUESTO">
       <ColNames>ID_PRODUCTO_COMPUESTO</ColNames>
       <ModifiedTimestamp>2024-03-07.21:46:38</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>PRODUCTO_PK</RefKeyName>
       <RefTableName>PRODUCTO</RefTableName>
     </foreign-key>
-    <index id="6786" parent="6703" name="PRODUCTO_PK">
+    <index id="6787" parent="6703" name="PRODUCTO_PK">
       <ColNames>IDPRODUCTO</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53754,34 +53761,34 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6787" parent="6703" name="PRODUCTO_PK">
+    <key id="6788" parent="6703" name="PRODUCTO_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRODUCTO_PK</UnderlyingIndexName>
     </key>
-    <column id="6788" parent="6704" name="IDPROVINCIA">
+    <column id="6789" parent="6704" name="IDPROVINCIA">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6789" parent="6704" name="NOMBREPROVINCIA">
+    <column id="6790" parent="6704" name="NOMBREPROVINCIA">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6790" parent="6704" name="REGION_IDREGION">
+    <column id="6791" parent="6704" name="REGION_IDREGION">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="6791" parent="6704" name="PROVINCIA_REGION_FK">
+    <foreign-key id="6792" parent="6704" name="PROVINCIA_REGION_FK">
       <ColNames>REGION_IDREGION</ColNames>
       <ModifiedTimestamp>2024-03-03.15:08:44</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>REGION_PK</RefKeyName>
       <RefTableName>REGION</RefTableName>
     </foreign-key>
-    <index id="6792" parent="6704" name="PROVINCIA_PK">
+    <index id="6793" parent="6704" name="PROVINCIA_PK">
       <ColNames>IDPROVINCIA</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53789,22 +53796,22 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6793" parent="6704" name="PROVINCIA_PK">
+    <key id="6794" parent="6704" name="PROVINCIA_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>PROVINCIA_PK</UnderlyingIndexName>
     </key>
-    <column id="6794" parent="6705" name="IDREGION">
+    <column id="6795" parent="6705" name="IDREGION">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6795" parent="6705" name="DESCRIPCION">
+    <column id="6796" parent="6705" name="DESCRIPCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6796" parent="6705" name="REGION_PK">
+    <index id="6797" parent="6705" name="REGION_PK">
       <ColNames>IDREGION</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53812,22 +53819,22 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6797" parent="6705" name="REGION_PK">
+    <key id="6798" parent="6705" name="REGION_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>REGION_PK</UnderlyingIndexName>
     </key>
-    <column id="6798" parent="6706" name="IDTIPO">
+    <column id="6799" parent="6706" name="IDTIPO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6799" parent="6706" name="DESCRIPCION">
+    <column id="6800" parent="6706" name="DESCRIPCION">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="6800" parent="6706" name="TIPODIRECCION_PK">
+    <index id="6801" parent="6706" name="TIPODIRECCION_PK">
       <ColNames>IDTIPO</ColNames>
       <CreatedTimestamp>2024-03-03.15:08:42</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-03.15:08:42</ModifiedTimestamp>
@@ -53835,101 +53842,126 @@ IDPRODUCTO</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6801" parent="6706" name="TIPODIRECCION_PK">
+    <key id="6802" parent="6706" name="TIPODIRECCION_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-03.15:08:43</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>TIPODIRECCION_PK</UnderlyingIndexName>
     </key>
-    <column id="6802" parent="6707" name="N">
+    <column id="6803" parent="6707" name="AUTO_MOBILE">
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="6804" parent="6707" name="CATEGORY">
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="6805" parent="6707" name="SYS_C009015">
+      <ColNames>AUTO_MOBILE</ColNames>
+      <CreatedTimestamp>2024-03-10.14:39:36</CreatedTimestamp>
+      <ModifiedTimestamp>2024-03-10.14:39:36</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>78632</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="6806" parent="6707" name="SYS_C009015">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-03-10.14:39:36</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C009015</UnderlyingIndexName>
+    </key>
+    <column id="6807" parent="6708" name="N">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="6803" parent="6708" name="IDPRODUCTO">
+    <column id="6808" parent="6709" name="IDPRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6804" parent="6708" name="NOMBREPRODUCTO">
+    <column id="6809" parent="6709" name="NOMBREPRODUCTO">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6805" parent="6708" name="UNIDADES_VENDIDAS">
+    <column id="6810" parent="6709" name="UNIDADES_VENDIDAS">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6806" parent="6708" name="GANANCIA_TOTAL">
+    <column id="6811" parent="6709" name="GANANCIA_TOTAL">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6807" parent="6709" name="IDPRODUCTO">
+    <column id="6812" parent="6710" name="IDPRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6808" parent="6709" name="NOMBREPRODUCTO">
+    <column id="6813" parent="6710" name="NOMBREPRODUCTO">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6809" parent="6709" name="CATEGORIA_IDCATEGORIA">
+    <column id="6814" parent="6710" name="CATEGORIA_IDCATEGORIA">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="6810" parent="6709" name="GANANCIA_UNITARIA">
+    <column id="6815" parent="6710" name="GANANCIA_UNITARIA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6811" parent="6709" name="CANTIDAD">
+    <column id="6816" parent="6710" name="CANTIDAD">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6812" parent="6710" name="ID_PRODUCTO">
+    <column id="6817" parent="6711" name="ID_PRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6813" parent="6710" name="PRODUCTO">
+    <column id="6818" parent="6711" name="PRODUCTO">
       <DasType>VARCHAR2(40 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6814" parent="6710" name="ANIO">
+    <column id="6819" parent="6711" name="ANIO">
       <DasType>VARCHAR2(4 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6815" parent="6710" name="TRIMETRE">
+    <column id="6820" parent="6711" name="TRIMETRE">
       <DasType>VARCHAR2(1 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6816" parent="6710" name="AVG">
+    <column id="6821" parent="6711" name="AVG">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6817" parent="6711" name="PRODUCTO">
+    <column id="6822" parent="6712" name="PRODUCTO">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="6818" parent="6711" name="SUBCATEGORIA">
+    <column id="6823" parent="6712" name="SUBCATEGORIA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="6819" parent="6711" name="CATEGORIA">
+    <column id="6824" parent="6712" name="CATEGORIA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6820" parent="6711" name="CANTIDAD_VENDIDA">
+    <column id="6825" parent="6712" name="CANTIDAD_VENDIDA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6821" parent="6711" name="GANANCIA">
+    <column id="6826" parent="6712" name="GANANCIA">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="6822" parent="6711" name="BOOL_CAT">
+    <column id="6827" parent="6712" name="BOOL_CAT">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="6823" parent="6711" name="BOOL_SUB_CAT">
+    <column id="6828" parent="6712" name="BOOL_SUB_CAT">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>7</Position>
     </column>

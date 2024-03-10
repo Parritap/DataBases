@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/store/preparcial.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/universidad/ex_uni.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/Modelos/universidad/universidad.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/Oracle/Modelos/vehicles/vehicle.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/sys_utils/createUser.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Oracle/sys_utils/delete_all_tables.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/Tareas/SQL/noviembre14/ex12.sql" dialect="MySQL" />
