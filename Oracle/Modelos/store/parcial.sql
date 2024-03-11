@@ -89,3 +89,24 @@ from (select p.IDPRODUCTO,
       start with (p.CATEGORIA_IDCATEGORIA = '1')) sub
 left join DETALLEVENTA d on (sub.IDPRODUCTO = d.IDPRODUCTO)
 group by sub.IDPRODUCTO, sub.NOMBREPRODUCTO, sub.lvl;
+
+
+-------------------------------------------------------------------------------
+-- Punto 3 --->
+
+select  c.IDCLIENTE id,
+        c.NOMBRE cliente,
+        -- TODO Poner la primera dirección no nula del cliente
+       --(coalesce(
+       --    (select DIRECCIÓN from d where d.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION = 'Tipo 1 - Trabajo')),
+       --    (select DIRECCIÓN from d where d.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION = 'Tipo 2 - Domicilio'))
+       -- )) as domicilio
+        from CLIENTE c JOIN (
+    (select distinct c.IDCLIENTE from CLIENTE c join FACTURAVENTA f on c.IDCLIENTE = f.IDCLIENTE )
+    MINUS
+    (select c.idcliente from cliente c join FACTURAVENTA f on c.IDCLIENTE = f.IDCLIENTE
+    where f.IDESTADO != (select idestado from ESTADOVENTA where DESCRIPCION = 'Anulada')
+)) sub on sub.IDCLIENTE = c.IDCLIENTE
+join DIRECCION d on c.IDCLIENTE = d.IDCLIENTE
+
+
