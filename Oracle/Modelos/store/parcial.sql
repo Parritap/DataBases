@@ -94,19 +94,21 @@ group by sub.IDPRODUCTO, sub.NOMBREPRODUCTO, sub.lvl;
 -------------------------------------------------------------------------------
 -- Punto 3 --->
 
+/* Genere una consulta en la cual por cada cliente se muestre su nombre, si su dirección
+(mostrar la tipo domicilio, si no existe la del trabajo, sino indicar ninguna),
+si es un cliente confiable o no (un cliente no confiable es aquel que ha cancelado alguna factura),
+solo debe tener en cuenta los clientes que estén activos.  */
+
 select  c.IDCLIENTE id,
         c.NOMBRE cliente,
-        -- TODO Poner la primera dirección no nula del cliente
-       --(coalesce(
-       --    (select DIRECCIÓN from d where d.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION = 'Tipo 1 - Trabajo')),
-       --    (select DIRECCIÓN from d where d.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION = 'Tipo 2 - Domicilio'))
-       -- )) as domicilio
-        from CLIENTE c JOIN (
+      coalesce(d1.DIRECCIÓN,d2.DIRECCIÓN) direccion,
+      coalesce (d1.IDTIPO, d2.IDTIPO) tipo_dir
+        from CLIENTE c join
+        (
     (select distinct c.IDCLIENTE from CLIENTE c join FACTURAVENTA f on c.IDCLIENTE = f.IDCLIENTE )
     MINUS
-    (select c.idcliente from cliente c join FACTURAVENTA f on c.IDCLIENTE = f.IDCLIENTE
-    where f.IDESTADO != (select idestado from ESTADOVENTA where DESCRIPCION = 'Anulada')
+    ((select distinct c.idcliente from cliente c join FACTURAVENTA f on c.IDCLIENTE = f.IDCLIENTE
+    where f.IDESTADO = (select idestado from ESTADOVENTA where DESCRIPCION = 'Anulada'))
 )) sub on sub.IDCLIENTE = c.IDCLIENTE
-join DIRECCION d on c.IDCLIENTE = d.IDCLIENTE
-
-
+left join DIRECCION d1 on (c.IDCLIENTE = d1.IDCLIENTE and d1.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION=' Tipo 1 - Trabajo'))
+left join DIRECCION d2 on (c.IDCLIENTE = d2.IDCLIENTE and d2.IDTIPO = (select IDTIPO from TIPODIRECCION where DESCRIPCION=' Tipo 2 - Dimicilio'))
