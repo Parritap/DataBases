@@ -5,8 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9503bc-e626-42dd-8717-a3f1bfd59f9f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hr/taller_disparadores.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hr/taller_disparadores_v1/4.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hr/taller_disparadores_v1/6.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/hr/utils.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/esquema_DDL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/macro_poblacion.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/alumnos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/bloque_horario.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/cursos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/docentes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/examenes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/grupos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/preguntas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/presentacion_examen.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/respuestas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/alumno_grupo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/horario.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/nota.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/pregunta_examen.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/presentacion_pregunta.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/temas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/tienda/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/tienda/poblacion.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/tienda/taller_disparadores_v2/1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Oracle/Modelos/tienda/taller_disparadores_v2/4.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/blobs/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/09f96c00-c8fd-4f7c-9828-3134f61c17f6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4734efdc-0cdb-4c9f-9390-b54ee81c494a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4734efdc-0cdb-4c9f-9390-b54ee81c494a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/63421a2c-607d-4bbf-8155-fdf508fd24b6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63421a2c-607d-4bbf-8155-fdf508fd24b6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/63421a2c-607d-4bbf-8155-fdf508fd24b6/storage_v2/_src_/schema/HR.CgkAAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/63421a2c-607d-4bbf-8155-fdf508fd24b6/storage_v2/_src_/schema/HR.CgkAAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/858ab090-019a-42fe-be26-809821404bc8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/858ab090-019a-42fe-be26-809821404bc8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ee0ce52-f919-4f89-ae10-939d5553e665.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ee0ce52-f919-4f89-ae10-939d5553e665.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aa5a106d-872e-4e46-bbac-fd76e1360587.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aa5a106d-872e-4e46-bbac-fd76e1360587.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/store/parcial.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/alumnos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/cursos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/docentes.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/grupos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_sql/tablas_intermedias/alumno_grupo.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_txt/alumnos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_txt/cursos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/poblacion_txt/docentes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/población.ddl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/proyecto/población.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oracle/Modelos/universidad/ex_uni.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Oracle/Modelos/universidad/ex_uni.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +87,15 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;grid.search.filter.rows&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/Parritap/Documents/DB&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
       &quot;mysql&quot;,
       &quot;oracle&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;Oracle&quot;
     ],
     &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect&quot;: [
       &quot;OracleSqlPlus&quot;,
@@ -57,6 +108,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Oracle/Modelos/tienda" />
       <recent name="$PROJECT_DIR$/Oracle/Modelos/universidad" />
     </key>
   </component>
@@ -73,6 +125,17 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>

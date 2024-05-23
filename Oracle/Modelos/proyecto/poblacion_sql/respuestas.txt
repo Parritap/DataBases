@@ -1,0 +1,218 @@
+-- RESPUESTAS
+
+-- Respuestas para las preguntas de tipo falso_verdadero
+-- Respuestas para la pregunta 1
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (1, 'Verdadero', 't', 1);
+
+-- Respuestas para la pregunta 2
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (2, 'Verdadero', 't', 2);
+
+-- Respuestas para la pregunta 3
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (3, 'Falso', 'f', 3);
+
+-- Respuestas para la pregunta 4
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (4, 'Verdadero', 't', 4);
+
+-- Respuestas para la pregunta 11
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (5, 'Verdadero', 't', 11);
+
+-- Respuestas para la pregunta 13
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (6, 'Falso', 'f', 13);
+
+--- RESPUESTAS PARA PREGUNTAS DE SELECCION MULTIPLE DE UNICA RESPUES
+-- Respuestas para pregunta 5
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (54, 'a) Verdadero', 't', 5);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (55, 'b) Falso', 'f', 5);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (7, 'c) No sé', 'f', 5);
+
+-- Respuestas para la pregunta 6
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (8, 'a) Núcleo', 'f', 6);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (9, 'b) Mitocondria', 't', 6);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (10, 'c) Lisosoma', 'f', 6);
+
+-- Respuestas para la pregunta 7
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (11, 'a) Roma', 't', 7);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (12, 'b) Atenas', 'f', 7);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (13, 'c) Cartago', 'f', 7);
+
+-- Respuestas para la pregunta 8
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (14, 'a) Telar mecánico', 't', 8);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (15, 'b) Rueda', 'f', 8);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (16, 'c) Pluma estilográfica', 'f', 8);
+
+-- Respuestas para la pregunta 10
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (17, 'a) Invención de la máquina de vapor', 't', 10);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (18, 'b) Descubrimiento de la penicilina', 'f', 10);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (19, 'c) Guerra de los Cien Años', 'f', 10);
+
+-- Respuestas para la pregunta 12
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (20, 'a) Pax Romana', 't', 12);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (21, 'b) Edad Media', 'f', 12);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (22, 'c) Era de los descubrimientos', 'f', 12);
+
+-- Respuestas para la pregunta 14
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (23, 'a) Digerir alimentos', 'f', 14);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (24, 'b) Síntesis de proteínas', 't', 14);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (25, 'c) Almacenamiento de agua', 'f', 14);
+
+-- Respuestas para la pregunta 15
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (26, 'a) Julio César', 't', 15);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (27, 'b) Augusto', 'f', 15);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (28, 'c) Nerón', 'f', 15);
+
+-- Respuestas para la pregunta 16
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (29, 'a) Carbón', 't', 16);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (30, 'b) Hierro', 'f', 16);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (31, 'c) Petróleo', 'f', 16);
+
+-- Respuestas para la pregunta 18
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (32, 'a) Corrupción interna', 't', 18);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (33, 'b) Invasiones bárbaras', 'f', 18);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (34, 'c) Caida de Constantinopla', 'f', 18);
+
+-- Respuestas para la pregunta 19
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (35, 'a) Carbón', 't', 19);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (36, 'b) Diamante', 'f', 19);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (37, 'c) Plata', 'f', 19);
+
+-- Respuestas para la pregunta 20
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (38, 'a) Síntesis de proteínas', 't', 20);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (39, 'b) Almacenamiento de agua', 'f', 20);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (40, 'c) Transporte de lípidos', 'f', 20);
+
+-- Respuestas para la pregunta 21
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (41, 'a) La selección natural es un mecanismo importante en la evolución', 't', 21);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (42, 'b) Los seres vivos no cambian a lo largo del tiempo', 'f', 21);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (43, 'c) El entorno no influye en la supervivencia de los organismos', 'f', 21);
+
+-- Respuestas para la pregunta 22
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (44, 'a) Clorofila', 't', 22);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (45, 'b) Hemoglobina', 'f', 22);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (46, 'c) Melanina', 'f', 22);
+
+-- Respuestas para la pregunta 23
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (47, 'a) Expansión territorial de Roma', 't', 23);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (48, 'b) Comercio con Grecia', 'f', 23);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (49, 'c) Paz y estabilidad en Italia', 'f', 23);
+
+-- Respuestas para la pregunta 24
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (50, 'a) Mejoró la velocidad y eficiencia del transporte', 't', 24);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (51, 'b) Provocó la paralización del transporte', 'f', 24);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (52, 'c) No tuvo impacto en el transporte', 'f', 24);
+
+-- Respuestas para la pregunta 25
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (53, 'a) Fotosíntesis', 't', 25);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (56, 'b) Respiración celular', 'f', 25);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (57, 'c) División celular', 'f', 25);
+
+
+-- Respuesta para la pregunta 27
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (58, 'Verdadero', 't', 27);
+
+-- Respuesta para la pregunta 28
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (59, 'Falso', 'f', 28);
+
+-- Respuestas para la pregunta 30
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (60, 'Captación de luz solar, Producción de glucosa', 'f', 30);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (61, 'Producción de glucosa, Captación de luz solar', 'f', 30);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (62, 'Captación de luz solar, Producción de glucosa', 't', 30);
+
+-- Respuestas para la pregunta 31
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (63, 'A,B,C', 't', 31);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (64, 'C,B,A', 'f', 31);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (65, 'B,C,A', 'f', 31);
+
+--Respuestas para las de emparejar conceptos
+
+-- Respuestas para la pregunta 9
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (66, 'ribosomas:centriolos', 't', 9);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (67, 'núcleo:membrana celular', 'f', 9);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (68, 'lisosoma:cloroplasto', 'f', 9);
+
+-- Respuestas para la pregunta 17
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (69, 'mitocondria:cloroplasto', 't', 17);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (70, 'núcleo:membrana celular', 'f', 17);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (71, 'lisosoma:centriolos', 'f', 17);
+
+--Repsuestas para seleccio multiple con multiple repsuesta
+
+-- Respuestas para la pregunta adicional
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (72, 'a) Mitocondria', 't', 32);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (73, 'b) Ribosomas', 't', 32);
+INSERT INTO respuesta (id_respuesta, descripcion, es_verdadera, id_pregunta)
+VALUES (74, 'c) papas fritas', 'f', 32);
+
+

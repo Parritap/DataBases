@@ -1,0 +1,36 @@
+-- Insertar datos en la tabla 'curso' desde una colección.
+INSERT INTO curso (id_curso, nombre, descripcion)
+SELECT
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 1) AS id_curso,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 2) AS nombre,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 3) AS descripcion
+FROM
+    TABLE(sys.odcivarchar2list(
+        '100, Matemáticas, Curso básico de matemáticas.',
+        '101, Física, Principios fundamentales de la física.',
+        '102, Química, Explorando los elementos y sus interacciones.',
+        '103, Biología, El estudio de la vida.',
+        '104, Historia, Un viaje a través del tiempo.',
+        '105, Literatura, Explorando la belleza de la palabra escrita.',
+        '106, Inglés, Dominando la lengua inglesa.',
+        '107, Español, Profundizando en el idioma español.',
+        '108, Arte, Despertando la creatividad a través del arte.',
+        '109, Música, Apreciando la armonía y el ritmo.',
+        '110, Geografía, Un vistazo al mundo que nos rodea.',
+        '111, Economía, Entendiendo el flujo del dinero y los recursos.',
+        '112, Psicología, Explorando la mente humana.',
+        '113, Sociología, Estudio de la sociedad y sus estructuras.',
+        '114, Filosofía, Cuestionando la existencia y la realidad.',
+        '115, Informática, Dominando el mundo digital.',
+        '116, Ingeniería, Aplicando la ciencia para resolver problemas.',
+        '117, Medicina, El arte de curar y cuidar.',
+        '118, Derecho, Estudiando las leyes y la justicia.',
+        '119, Arquitectura, Diseñando espacios para la vida.',
+        '120, Diseño, Creando soluciones visuales innovadoras.',
+        '121, Comunicación, El poder de las palabras e imágenes.',
+        '122, Educación, Formando las mentes del futuro.',
+        '123, Administración, Gestionando recursos para el éxito.',
+        '124, Marketing, Conectando productos con las personas.'
+    ));
+
+COMMIT;

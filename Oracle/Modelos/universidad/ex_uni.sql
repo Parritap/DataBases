@@ -70,17 +70,6 @@ from (select p.ESTUDIANTE_ID       as estudiante,
 -- cantidad de eventos totales (todo dentro del mismo query).
 
 
-create or replace view aula_evento_fecha (id_aula, aula, evento, fecha_evento, anio_evento, mes_evento) as
-select a.ID_AULA,
-       a.NOMBRE_AULA,
-       e.NOMBRE_EVENTO,
-       e.FECHA_EVENTO,
-       extract(year from e.FECHA_EVENTO)  as anio_evento,
-       extract(month from e.FECHA_EVENTO) as mes_evento
-from EVENTO e
-         JOIN AULA a ON e.AULA_ID = a.ID_AULA;
-
-
 select aula,
        anio_evento,
        count(evento) as cantidad_eventos,
@@ -94,6 +83,15 @@ group by grouping sets (
     ()
     );
 
+
+create or replace view aula_curso_dpto (departamento, curso, id_aula) as
+select d.NOMBRE_DEPARTAMENTO as departamento,
+       c.NOMBRE_CURSO,
+       a.ID_AULA
+from AULA a
+         join CURSO c on a.ID_AULA = c.AULA_ID
+         JOIN DEPARTAMENTO d on c.DEPARTAMENTO_ID = d.ID_DEPARTAMENTO;
+
 ------------------------------------------------------------------------------------------------------------------------------>
 
 
@@ -106,18 +104,20 @@ group by grouping sets (
 -- como tambien la cantidad total de aulas en la universidad.
 
 
-create or replace view aula_curso_dpto (departamento, curso, id_aula) as
-select d.NOMBRE_DEPARTAMENTO as departamento,
-       c.NOMBRE_CURSO,
-       a.ID_AULA
-from AULA a
-         join CURSO c on a.ID_AULA = c.AULA_ID
-         JOIN DEPARTAMENTO d on c.DEPARTAMENTO_ID = d.ID_DEPARTAMENTO;
-
-
 select departamento, curso, count(id_aula)
 from aula_curso_dpto
 group by rollup (departamento, curso);
+
+
+create or replace view aula_evento_fecha (id_aula, aula, evento, fecha_evento, anio_evento, mes_evento) as
+select a.ID_AULA,
+       a.NOMBRE_AULA,
+       e.NOMBRE_EVENTO,
+       e.FECHA_EVENTO,
+       extract(year from e.FECHA_EVENTO)  as anio_evento,
+       extract(month from e.FECHA_EVENTO) as mes_evento
+from EVENTO e
+         JOIN AULA a ON e.AULA_ID = a.ID_AULA;
 
 
 ------------------------------------------------------------------------------------------------------------------------------

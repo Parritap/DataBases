@@ -1,0 +1,8 @@
+-- Insertar registros en la tabla NOTA con calificación 0,
+-- basándose en los registros de ALUMNO_GRUPO.
+
+INSERT INTO nota (valor, id_grupo, id_alumno)
+SELECT 0, ag.id_grupo, ag.id_alumno
+FROM alumno_grupo ag;
+
+COMMIT;

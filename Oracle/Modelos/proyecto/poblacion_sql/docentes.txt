@@ -1,0 +1,42 @@
+-- Insertar datos en la tabla 'docente' desde una colección.
+INSERT INTO docente (id_docente, nombre, apellido, identificacion)
+SELECT
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 1) AS id_docente,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 2) AS nombre,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 3) AS apellido,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 1) AS identificacion -- Usando el id_docente como identificacion
+FROM
+    TABLE(sys.odcivarchar2list(
+        '1000, Alice, Johnson',
+        '1001, Bob, Smith',
+        '1002, Charlie, Williams',
+        '1003, David, Brown',
+        '1004, Emily, Davis',
+        '1005, Frank, Miller',
+        '1006, Grace, Wilson',
+        '1007, Henry, Moore',
+        '1008, Isabella, Taylor',
+        '1009, Jack, Anderson',
+        '1010, Katherine, Thomas',
+        '1011, Liam, Jackson',
+        '1012, Mia, White',
+        '1013, Noah, Harris',
+        '1014, Olivia, Martin',
+        '1015, Peter, Thompson',
+        '1016, Queen, Garcia',
+        '1017, Robert, Martinez',
+        '1018, Sophia, Robinson',
+        '1019, Thomas, Clark',
+        '1020, Ursula, Lewis',
+        '1021, Vincent, Lee',
+        '1022, William, Walker',
+        '1023, Xenia, Hall',
+        '1024, Yolanda, Allen',
+        '1025, Zachary, Young',
+        '1026, Abigail, King',
+        '1027, Benjamin, Wright',
+        '1028, Charlotte, Scott',
+        '1029, Daniel, Green'
+    ));
+
+COMMIT;

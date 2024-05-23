@@ -1,0 +1,20 @@
+-- Relacionar dos bloques horarios a cada grupo.
+BEGIN
+  FOR grupo_rec IN (SELECT id_grupo FROM grupo) LOOP
+    FOR bloque_rec IN (
+      SELECT id_bloque_horario
+      FROM bloque_horiario
+      WHERE id_bloque_horario NOT IN (
+        SELECT id_bloque_horario
+        FROM horario
+        WHERE id_grupo = grupo_rec.id_grupo
+      )
+      AND ROWNUM <= 2
+    ) LOOP
+      INSERT INTO horario (id_bloque_horario, id_grupo)
+      VALUES (bloque_rec.id_bloque_horario, grupo_rec.id_grupo);
+    END LOOP;
+  END LOOP;
+  COMMIT;
+END;
+/

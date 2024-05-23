@@ -1,0 +1,28 @@
+-- Datos de tema
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (1, 'Revolución Industrial', 'Impacto socioeconómico y tecnológico del siglo XIX.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (2, 'Ecuaciones Diferenciales', 'Métodos para resolver ecuaciones que contienen derivadas.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (3, 'Filosofía Existencialista', 'Exploración de la libertad, la responsabilidad y la existencia humana.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (4, 'Teoría de la Evolución', 'Principios y mecanismos de la evolución biológica.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (5, 'Literatura del Siglo de Oro', 'Obras literarias destacadas del Renacimiento y el Barroco.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (6, 'Geometría Fractal', 'Estudio de figuras geométricas irregulares y auto-similares.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (7, 'Magnetismo y Electricidad', 'Conceptos básicos y aplicaciones en la física moderna.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (8, 'Psicología del Desarrollo', 'Estudio de los cambios psicológicos a lo largo de la vida.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (9, 'Ecología y Conservación', 'Interacciones entre los organismos y su entorno, y estrategias para proteger la biodiversidad.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (10, 'Teoría de Juegos', 'Modelos matemáticos de interacción estratégica entre agentes racionales.');
+
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (11, 'Imperio Romano', 'Historia, gobierno y cultura del antiguo imperio romano.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (12, 'Cálculo Integral', 'Técnicas para calcular áreas y volúmenes bajo curvas.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (13, 'Arte del Renacimiento', 'Obras artísticas y características del Renacimiento.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (14, 'Genética Molecular', 'Estudio de la estructura y función de los genes.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (15, 'Literatura Contemporánea', 'Movimientos literarios y autores del siglo XX y XXI.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (16, 'Teoría del Caos', 'Sistemas dinámicos no lineales y su comportamiento impredecible.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (17, 'Química Orgánica', 'Estudio de los compuestos orgánicos y sus reacciones.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (18, 'Psicología Social', 'Interacciones entre individuos y grupos en contextos sociales.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (19, 'Medicina Tradicional China', 'Principios y prácticas de la medicina china milenaria.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (20, 'Robótica Avanzada', 'Diseño y programación de robots autónomos y colaborativos.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (21, 'Teoría de la Relatividad', 'Conceptos y consecuencias de la teoría de la relatividad de Einstein.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (22, 'Arquitectura Sostenible', 'Diseño de edificaciones respetuosas con el medio ambiente.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (23, 'Neurociencia Cognitiva', 'Estudio de los procesos mentales y su base neural.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (24, 'Derechos Humanos', 'Principios fundamentales de la dignidad y libertad humana.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (25, 'Economía Global', 'Interacciones económicas entre naciones y mercados internacionales.');
+INSERT INTO tema (id_tema, titulo, descripcion) VALUES (26, 'Biología Celular', 'Estudio de la estructura, función y comportamiento de las células, las unidades básicas de la vida.');

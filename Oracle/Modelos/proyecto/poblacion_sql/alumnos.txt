@@ -1,0 +1,39 @@
+-- Insertar datos en la tabla 'alumno' desde una colección.
+INSERT INTO alumno (id_alumno, nombre, apellido)
+SELECT
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 1) AS id_alumno,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 2) AS nombre,
+    REGEXP_SUBSTR(column_value, '[^,]+', 1, 3) AS apellido
+FROM
+    TABLE(sys.odcivarchar2list(
+        '1000, Sophia, Smith',
+        '1001, Jackson, Moore',
+        '1002, Emma, Taylor',
+        '1003, Aiden, Anderson',
+        '1004, Olivia, Thomas',
+        '1005, Liam, Jackson',
+        '1006, Ava, White',
+        '1007, Noah, Harris',
+        '1008, Isabella, Martin',
+        '1009, Lucas, Thompson',
+        '1010, Mia, Garcia',
+        '1011, Ethan, Martinez',
+        '1012, Abigail, Robinson',
+        '1013, James, Clark',
+        '1014, Charlotte, Lewis',
+        '1015, Logan, Lee',
+        '1016, Harper, Walker',
+        '1017, Benjamin, Hall',
+        '1018, Evelyn, Allen',
+        '1019, Elijah, Young',
+        '1020, Amelia, King',
+        '1021, Matthew, Wright',
+        '1022, Luna, Scott',
+        '1023, William, Green',
+        '1024, Elizabeth, Brown',
+        '1025, Michael, Davis',
+        '1026, Evelyn, Miller',
+        '1027, Daniel, Wilson',
+        '1028, Chloe, Moore',
+        '1029, Joseph, Taylor'
+    ));

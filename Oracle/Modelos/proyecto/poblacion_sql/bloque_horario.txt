@@ -1,0 +1,39 @@
+-- Insertar bloques horarios en la tabla BLOQUE_HORARIO.
+
+-- Iterar sobre los días de la semana (Lunes a Viernes).
+BEGIN
+    FOR dia IN 1..5 LOOP
+        -- Iterar sobre las horas del día (7AM a 8PM, excluyendo 1PM - 1:59PM).
+        FOR hora IN 7..20 LOOP -- Cambiar el límite superior a 20
+            -- Excluir el bloque de tiempo de 1PM a 1:59PM.
+            IF hora != 13 THEN
+                -- Calcular la hora de inicio y fin del bloque horario.
+                DECLARE
+                    v_hora_inicio VARCHAR2(10);
+                    v_hora_fin VARCHAR2(10);
+                BEGIN
+                    v_hora_inicio := TO_CHAR(hora, '09') || ':00:00';
+                    v_hora_fin := TO_CHAR(hora + 2, '09') || ':00:00';
+
+                    -- Insertar el bloque horario en la tabla.
+                    INSERT INTO bloque_horiario (hora_inicio, hora_fin, lugar, dia)
+                    VALUES (
+                        TO_TIMESTAMP(v_hora_inicio, 'HH24:MI:SS'),
+                        TO_TIMESTAMP(v_hora_fin, 'HH24:MI:SS'),
+                        'Aula ' || (hora - 6), -- Asignar aulas secuencialmente (Aula 1, Aula 2, etc.)
+                        CASE dia
+                            WHEN 1 THEN 'l'
+                            WHEN 2 THEN 'm'
+                            WHEN 3 THEN 'x'
+                            WHEN 4 THEN 'j'
+                            WHEN 5 THEN 'v'
+                        END
+                    );
+                END;
+            END IF;
+        END LOOP;
+    END LOOP;
+
+    COMMIT;
+END;
+/

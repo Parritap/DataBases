@@ -1,0 +1,39 @@
+-- Asignar alumnos a los grupos Biología A, Biología B, Historia A e Historia B.
+
+-- Obtener los IDs de los grupos a poblar.
+DECLARE
+    v_biologia_a_id  grupo.id_grupo%TYPE;
+    v_biologia_b_id  grupo.id_grupo%TYPE;
+    v_historia_a_id  grupo.id_grupo%TYPE;
+    v_historia_b_id  grupo.id_grupo%TYPE;
+BEGIN
+    SELECT id_grupo INTO v_biologia_a_id FROM grupo WHERE ID_GRUPO = 213;
+    SELECT id_grupo INTO v_biologia_b_id FROM grupo WHERE ID_GRUPO = 214;
+    SELECT id_grupo INTO v_historia_a_id FROM grupo WHERE ID_GRUPO = 200;
+    SELECT id_grupo INTO v_historia_b_id FROM grupo WHERE ID_GRUPO = 201;
+
+    -- Insertar alumnos con IDs entre 1000 y 1014 en Biología A e Historia A
+    INSERT INTO alumno_grupo (id_grupo, id_alumno)
+    SELECT v_biologia_a_id, id_alumno
+    FROM alumno
+    WHERE id_alumno BETWEEN 1000 AND 1014;
+
+    INSERT INTO alumno_grupo (id_grupo, id_alumno)
+    SELECT v_historia_a_id, id_alumno
+    FROM alumno
+    WHERE id_alumno BETWEEN 1000 AND 1014;
+
+    -- Insertar alumnos con IDs entre 1015 y 1029 en Biología B e Historia B
+    INSERT INTO alumno_grupo (id_grupo, id_alumno)
+    SELECT v_biologia_b_id, id_alumno
+    FROM alumno
+    WHERE id_alumno BETWEEN 1015 AND 1029;
+
+    INSERT INTO alumno_grupo (id_grupo, id_alumno)
+    SELECT v_historia_b_id, id_alumno
+    FROM alumno
+    WHERE id_alumno BETWEEN 1015 AND 1029;
+
+    COMMIT;
+END;
+/

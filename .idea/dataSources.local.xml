@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="DB-233.14015.137">
+  <component name="dataSourceStorageLocal" created-in="DB-241.17011.41">
     <data-source name="Sys" uuid="aa5a106d-872e-4e46-bbac-fd76e1360587">
       <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
         <extra-name-characters>$#</extra-name-characters>
@@ -105,6 +105,115 @@
           <node kind="schema">
             <name qname="@" />
             <name qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
+    </data-source>
+    <data-source name="Biblioteca" uuid="4367d731-7d69-4888-ae1a-d507490c515b">
+      <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>biblioteca</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
+    </data-source>
+    <data-source name="libraryman" uuid="c0627e5d-b6c6-4924-bd3e-8c85e729888c">
+      <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>libraryman</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
+    </data-source>
+    <data-source name="proyecto" uuid="db297ab2-660e-4ad7-a0e5-929ac62bfd2a">
+      <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>proyecto</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
+    </data-source>
+    <data-source name="aux" uuid="d7237b68-5889-40c9-9a6d-e199b5b28900">
+      <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>aux</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <load-sources>user_and_system_sources</load-sources>
+    </data-source>
+    <data-source name="icbf" uuid="5a6b6e2d-9778-4486-a5af-1325376f92d1">
+      <database-info product="MySQL" version="8.0.36" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.36" exact-driver-version="8.2">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="icbf" />
+            <name qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="tienda" uuid="225bc86e-31d7-48a2-b825-2f130c46746d">
+      <database-info product="Oracle" version="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" jdbc-version="4.3" driver-name="Oracle JDBC driver" driver-version="21.5.0.0.0" dbms="ORACLE" exact-version="21.0.0.0.0" exact-driver-version="21.5">
+        <extra-name-characters>$#</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>tienda</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="PUBLIC" />
+            <name qname="HR" />
+            <name qname="STORE" />
           </node>
         </introspection-scope>
       </schema-mapping>

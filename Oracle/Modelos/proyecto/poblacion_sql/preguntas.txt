@@ -1,0 +1,130 @@
+-- Insertar datos de ejemplo en la tabla pregunta
+-- Pregunta 1
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (1, '¿La selección natural es un mecanismo importante en la evolución?', 'S', 'falso_verdadero', NULL, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 2
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (2, '¿Cuál es el organelo responsable de la síntesis de proteínas en la célula?', 'S', 'falso_verdadero', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 3
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (3, '¿Julio César fue el primer emperador romano?', 'S', 'falso_verdadero', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 4
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (4, '¿Las máquinas de vapor fueron un avance importante durante la revolución industrial?', 'S', 'falso_verdadero', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 5
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (5, '¿Cuál es la teoría que propone que los organismos evolucionan a lo largo del tiempo a través de la selección natural?', 'S', 'multiple_unica_respuesta', NULL, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 6
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (6, '¿Qué estructura celular contiene la información genética en forma de ADN?', 'S', 'multiple_unica_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 7
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (7, '¿Cuál era la capital del Imperio Romano durante su período de máximo esplendor?', 'S', 'multiple_unica_respuesta', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 8
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (8, '¿Qué innovación tecnológica impulsó el crecimiento de la industria textil durante la Revolución Industrial?', 'S', 'multiple_unica_respuesta', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 9
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (9, 'Relacione las siguientes palabras con su función celular correspondiente: "Ribosomas" y "Centriolos"', 'S', 'emparejar_conceptos', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 10
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (10, '¿Cuál de los siguientes eventos históricos marcó el inicio de la Revolución Industrial?', 'S', 'multiple_unica_respuesta', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 11
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (11, '¿La mitocondria es el "centro de control" de la célula?', 'S', 'falso_verdadero', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 12
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (12, '¿Qué caracterizó al período de la Pax Romana?', 'S', 'multiple_unica_respuesta', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 13
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (13, '¿Qué impacto tuvo la invención del telar mecánico en la industria textil durante la Revolución Industrial?', 'S', 'falso_verdadero', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 14
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (14, '¿Cuál es la función principal de los lisosomas en la célula?', 'S', 'multiple_unica_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 15
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (15, '¿Qué emperador romano fue conocido por su política de "Pan y Circo" para mantener la estabilidad social?', 'S', 'multiple_unica_respuesta', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 16
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (16, '¿Qué factor contribuyó al desarrollo de la máquina de vapor durante la Revolución Industrial?', 'S', 'multiple_unica_respuesta', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 17
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (17, 'Relacione los siguientes conceptos con su significado adecuado: "Mitocondria" y "Cloroplasto"', 'S', 'emparejar_conceptos', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 18
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (18, '¿Qué factor político influyó en el declive del Imperio Romano?', 'S', 'multiple_unica_respuesta', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 19
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (19, '¿Cuál de los siguientes recursos naturales fue crucial para la expansión de la industria durante la Revolución Industrial?', 'S', 'multiple_unica_respuesta', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 20
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (20, '¿Qué función desempeñan los ribosomas en la síntesis de proteínas?', 'S', 'multiple_unica_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 21
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (21, '¿Cuál fue el impacto de la teoría de la selección natural en el pensamiento científico del siglo XIX?', 'S', 'multiple_unica_respuesta', NULL, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 22
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (22, '¿Qué estructuras celulares están involucradas en la fotosíntesis?', 'S', 'multiple_unica_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 23
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (23, '¿Cuál fue el impacto de las guerras púnicas en la expansión territorial de Roma?', 'S', 'multiple_unica_respuesta', NULL, 11, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 24
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (24, '¿Qué efecto tuvo la invención de la locomotora de vapor en el transporte durante la Revolución Industrial?', 'S', 'multiple_unica_respuesta', NULL, 1, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 25
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (25, '¿Cuál es la función principal de los cloroplastos en la célula vegetal?', 'S', 'multiple_unica_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+--AÑADO LAS PREGUNTAS QUE VAN A TENER SUBPREGUNTAS
+
+-- Pregunta 26 (Padre)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (26, '¿Qué afirmaciones son verdaderas acerca de la evolución?', 'S', 'multiple_multiple_respuesta', NULL, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Subpregunta 1 (Hija)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (27, 'La selección natural es un mecanismo importante en la evolución', 'S', 'falso_verdadero', 26, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Subpregunta 2 (Hija)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (28, 'Los organismos evolucionan de acuerdo con los cambios ambientales', 'S', 'falso_verdadero', 26, 4, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta 27 (Padre)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (29, '¿Cuál es el proceso completo de la fotosíntesis?', 'S', 'ordenar_conceptos', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Subpregunta 1 (Hija)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (30, 'Captación de luz solar', 'S', 'ordenar_conceptos', 29, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Subpregunta 2 (Hija)
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (31, 'Producción de glucosa', 'S', 'ordenar_conceptos', 29, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
+
+-- Pregunta adicional
+INSERT INTO pregunta (id_pregunta, enunciado, es_publica, tipo_pregunta, id_pregunta_compuesta, id_tema, id_docente, estado)
+VALUES (32, '¿Cuáles son organelos celulares?', 'S', 'multiple_multiple_respuesta', NULL, 26, ROUND(DBMS_RANDOM.VALUE(1000, 1029)), 'creada');
